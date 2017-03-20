@@ -20,7 +20,7 @@
     <body>
 
         <div id="wrapper">
-            <div id="loginWindow" style="width: 150%; height: 700px;">
+            <div id="loginWindow" >
                 <div class="page-header">
                     <p class="left">
                         <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
