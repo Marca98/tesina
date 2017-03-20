@@ -1,0 +1,138 @@
+.navbar-default {
+  background-color: #5978b6;
+  border-color: #4455ad;
+}
+.navbar-default .navbar-brand {
+  color: #f2f5f6;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #29344f;
+}
+.navbar-default .navbar-text {
+  color: #f2f5f6;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #f2f5f6;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #29344f;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #29344f;
+  background-color: #4455ad;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #29344f;
+  background-color: #4455ad;
+}
+.navbar-default .navbar-toggle {
+  border-color: #4455ad;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #4455ad;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f2f5f6;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #f2f5f6;
+}
+.navbar-default .navbar-link {
+  color: #f2f5f6;
+}
+.navbar-default .navbar-link:hover {
+  color: #29344f;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #f2f5f6;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #29344f;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #29344f;
+    background-color: #4455ad;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body{
+  font-family: "Quicksand", sans-serif;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: grey;
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background:    -moz-linear-gradient(#648880, #293f50);
+  background:         linear-gradient(#648880, #293f50);
+  
+}
+
+#wrapper {
+  width: 50%;
+  height: 100%;
+  bottom: 0;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  min-width: 400px;
+  overflow: hidden;
+}
+
+#loginWindow {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 2em;
+  border: solid #eee 1px;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+.input-group {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  opacity: 0;
+}
+
+.page-header {
+  opacity: 0;
+}
+
+.left {
+  float: right;
+  font-size: 1.5em;
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+}
