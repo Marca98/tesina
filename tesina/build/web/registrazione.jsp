@@ -20,7 +20,7 @@
     <body>
 
         <div id="wrapper">
-            <div id="loginWindow">
+            <div id="loginWindow" style="width: 150%; height: 700px;">
                 <div class="page-header">
                     <p class="left">
                         <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
@@ -37,19 +37,19 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Nome</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="#" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Cognome</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="#" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Email</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="#" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Città</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="#" aria-describedby="basic-addon1">
                 </div>
                 
                 <a href="index.html"><button class="btn btn-primary" type="submit">Submit</button></a>
