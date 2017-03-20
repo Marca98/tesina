@@ -37,19 +37,19 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Nome</span>
-                    <input type="text" class="form-control" placeholder="#" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="nome" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Cognome</span>
-                    <input type="text" class="form-control" placeholder="#" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="cognome" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Email</span>
-                    <input type="text" class="form-control" placeholder="#" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="email" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Città</span>
-                    <input type="text" class="form-control" placeholder="#" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="città" aria-describedby="basic-addon1">
                 </div>
                 
                 <a href="index.html"><button class="btn btn-primary" type="submit">Submit</button></a>
