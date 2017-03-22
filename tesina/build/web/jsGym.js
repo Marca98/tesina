@@ -6,7 +6,3 @@ $( document ).ready( function(){
     .delay(850)
     .animate({ 'opacity': '100' }, 7000);
 });
-
-$('#navbar li').click(function() {
-    $(this).addClass('active').siblings('li').removeClass('active');
-});
