@@ -6,76 +6,136 @@ body{
     background: -webkit-linear-gradient(#648880, #293f50);
     background:    -moz-linear-gradient(#648880, #293f50);
     background:         linear-gradient(#648880, #293f50);
+}
 
-
+footer{
+    
+    color: #34889d;
+    
 }
 
 .navbar-default {
-    background-color: #5978b6;
-    border-color: #4455ad;
+  background-color: #fdfcfd;
+  border-color: #d4d4d4;
 }
 .navbar-default .navbar-brand {
-    color: #f2f5f6;
+  color: #34889d;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #29344f;
+  color: #5e5c60;
 }
 .navbar-default .navbar-text {
-    color: #f2f5f6;
+  color: #34889d;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #f2f5f6;
+  color: #34889d;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #29344f;
+  color: #5e5c60;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #29344f;
-    background-color: #4455ad;
+  color: #5e5c60;
+  background-color: #d4d4d4;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-    color: #29344f;
-    background-color: #4455ad;
+  color: #5e5c60;
+  background-color: #d4d4d4;
 }
 .navbar-default .navbar-toggle {
-    border-color: #4455ad;
+  border-color: #d4d4d4;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #4455ad;
+  background-color: #d4d4d4;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #f2f5f6;
+  background-color: #34889d;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-    border-color: #f2f5f6;
+  border-color: #34889d;
 }
 .navbar-default .navbar-link {
-    color: #f2f5f6;
+  color: #34889d;
 }
 .navbar-default .navbar-link:hover {
-    color: #29344f;
+  color: #5e5c60;
 }
 
 @media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #f2f5f6;
-    }
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #29344f;
-    }
-    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-        color: #29344f;
-        background-color: #4455ad;
-    }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #34889d;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #5e5c60;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #5e5c60;
+    background-color: #d4d4d4;
+  }
 }
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+   
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    
+    #corpo {
+        width: 50%;
+        height: 100%;
+        bottom: 0;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+        min-width: 400px;
+        overflow: hidden;
+    }
+
+    #corpoWindow {
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+        border: solid #eee 1px;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 1200px;
+        height: 1000px;
+    }
+    
+    h5{
+        color: darkgray;
+        font-style: italic;    
+    }
+    
+    h2{
+        color: grey;
+    }
