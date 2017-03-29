@@ -6,14 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<%-- 
-    Document   : allenamento
-    Created on : 20-mar-2017, 12.22.35
-    Author     : iti5a07
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Gym Mate</title>
@@ -27,7 +20,7 @@
     </head>
     <body>
 
-        <nav class="navbar-default" >
+        <nav class="navbar-default navbar-fixed-top " >
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -40,8 +33,8 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="allenamento.jsp">Allenamento</a></li>
-                        <li><a href="#">Schede</a></li>
+                        <li><a href="allenamento.jsp">Allenamento</a></li>
+                        <li class="active"><a href="cercaPalestre">Cerca palestre</a></li>
                         <li><a href="contatti.jsp">Contatti</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">

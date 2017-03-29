@@ -17,6 +17,7 @@ footer{
 .navbar-default {
   background-color: #fdfcfd;
   border-color: #d4d4d4;
+ 
 }
 .navbar-default .navbar-brand {
   color: #34889d;
@@ -127,7 +128,7 @@ footer{
         border: solid #eee 1px;
         border-radius: 5px;
         overflow: hidden;
-        width: 1200px;
+        width: 1600px;
         height: 1000px;
     }
     

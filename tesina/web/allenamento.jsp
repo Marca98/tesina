@@ -33,7 +33,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
                         <li class="active"><a href="allenamento.jsp">Allenamento</a></li>
-                        <li><a href="#">Schede</a></li>
+                        <li><a href="cercaPalestre.jsp">Cerca palestre</a></li>
                         <li><a href="contatti.jsp">Contatti</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
