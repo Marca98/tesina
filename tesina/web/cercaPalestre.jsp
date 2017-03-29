@@ -1,25 +1,12 @@
-<%-- 
-    Document   : schede
-    Created on : 27-mar-2017, 11.35.39
-    Author     : iti5a07
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Gym Mate</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="cssTesina.css">
-        <link href="jsGym.js">
-    </head>
+        <% pageContext.include("include/header.jsp");  %>
+    </head> 
     <body>
-
         <nav class="navbar-default navbar-fixed-top " >
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -28,7 +15,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="#">Gym mate</a>
+                    <a class="navbar-brand" href="index.jsp">Gym mate</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
@@ -46,23 +33,44 @@
             </div>
             <div style="height: 1px; background-color:#34889d;"></div>
         </nav>
-       
+
+
         <div id="corpo">    
             <div id="corpoWindow">
-                <h1>Programmi d'allenamento</h1>
-                <h5>27/03/17</h5>
-                <p>Testo...
+                <h1>Cerca la palestra più vicina a te</h1>
+                <!--<style>
+                    /* Always set the map height explicitly to define the size of the div
+                     * element that contains the map. */
+                    #map {
+                        height: 50%;
+                        width: 100%;
+                        padding-left:0px;
+                    }
+                    /* Optional: Makes the sample page fill the window. */
+                    html, body {
+                        height: 100%;
+                        margin: 0px;
+                        padding: auto;
+                    }
+                </style>
 
-                <h2>Schede per allenamento</h2>
-                <h5>05/03/17</h5>
-                <p>Testo...
-            </div><br><br><br><br>
-        </div>   
-
+                <div id="map"></div>
+                <script>
+                    var map;
+                    function initMap() {
+                        map = new google.maps.Map(document.getElementById('map'), {
+                            center: {lat: -34.397, lng: 150.644},
+                            zoom: 8
+                        });
+                    }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALJ4LH7HQkKfqFW559E8VfoIWGLhD7ngY&callback=initMap"
+                async defer></script>-->
+            </div>  
+        </div>
 
         <footer class="container-fluid text-center">
             <p>Footer Text</p>
         </footer>
-
     </body>
 </html>

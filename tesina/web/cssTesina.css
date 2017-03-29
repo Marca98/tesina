@@ -12,6 +12,7 @@ footer{
     
     color: #34889d;
     
+    
 }
 
 .navbar-default {
@@ -107,7 +108,7 @@ footer{
     }
     
     #corpo {
-        width: 80%;
+        width: 50%;
         height: 100%;
         bottom: 0;
         margin-top: 50px;

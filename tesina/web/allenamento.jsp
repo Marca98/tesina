@@ -9,13 +9,8 @@
 <html lang="en">
     <head>
         <title>Gym Mate</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="cssTesina.css">
-        <link href="jsGym.js">
+        <% pageContext.include("include/header.jsp");  %>
+        <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
     </head>
     <body>
 
@@ -27,11 +22,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="#">Gym mate</a>
+                    <a class="navbar-brand" href="index.jsp">Gym mate</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.jsp">Home</a></li>
                         <li class="active"><a href="allenamento.jsp">Allenamento</a></li>
                         <li><a href="cercaPalestre.jsp">Cerca palestre</a></li>
                         <li><a href="contatti.jsp">Contatti</a></li>
