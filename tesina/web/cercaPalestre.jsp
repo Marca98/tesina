@@ -44,6 +44,7 @@
                     </ul>
                 </div>
             </div>
+            <div style="height: 1px; background-color:#34889d;"></div>
         </nav>
        
         <div id="corpo">    
@@ -57,6 +58,7 @@
                 <p>Testo...
             </div><br><br><br><br>
         </div>   
+
 
         <footer class="container-fluid text-center">
             <p>Footer Text</p>
