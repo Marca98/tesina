@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="cssTesina.css">
         <link href="jsGym.js">
     </head>
+    <link rel="icon" href="muscle.png">
     <body>
 
         <nav class="navbar-default" >
@@ -45,7 +46,7 @@
             </div>
             <div style="height: 1px; background-color:#34889d;"></div>
         </nav>
-       
+
         <div id="corpo">    
             <div id="corpoWindow">
                 <h1>Programmi d'allenamento</h1>
