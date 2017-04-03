@@ -20,7 +20,7 @@
     <link rel="icon" href="muscle.png">
     <body>
 
-        <nav class="navbar-default" >
+        <nav class="navbar-default navbar-fixed-top" >
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -45,20 +45,15 @@
                 </div>
             </div>
             <div style="height: 1px; background-color:#34889d;"></div>
-        </nav>
+        </nav><br><br>
 
-        <div id="corpo">    
-            <div id="corpoWindow">
-                <h1>Programmi d'allenamento</h1>
-                <h5>27/03/17</h5>
-                <p>Testo...
+        <div class="container"><br><br>
 
-                <h2>Schede per allenamento</h2>
-                <h5>05/03/17</h5>
-                <p>Testo...
-            </div><br><br><br><br>
-        </div>   
+            <div class="well tex">Gym Mate
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+            </div>
+        </div><br><br><br>
         <footer class="container-fluid text-center">
             <p>Footer Text</p>
         </footer>

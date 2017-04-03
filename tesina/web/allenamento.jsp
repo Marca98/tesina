@@ -48,38 +48,22 @@
         </nav>
 
         <div class="jumbotron text-center">
-            <h1>Allenamento</h1>
-            <p>schede nutrizionali e aerobice per raggiungere il tuo obbiettivo al meglio</p> 
+            <h1>Allenamento</h1><br>
+            <p>schede nutrizionali e aerobiche per raggiungere il tuo obbiettivo al meglio</p> 
             <br>
             <br>
             <br>
         </div>
 
-        <div id="corpo">    
-            <div id="corpoWindow">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h3>Column 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <h3>Column 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <h3>Column 3</h3>        
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                        </div>
-                    </div>
-                </div>   
+        <div class="container"><br>
+
+            <div class="well">Gym Mate
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
             </div>
-        </div>
+        </div><br><br>
 
-        <footer class="container-fluid text-center">
+        <footer class="container-fluid text-center background-white">
             <p>Footer Text</p>
         </footer>
 

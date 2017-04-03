@@ -47,35 +47,43 @@
             </div>
             <div style="height: 1px; background-color:#34889d;"></div>
         </nav>
-       
+
         <div class="jumbotron text-center">
-            <h1>Cerca Palestre</h1>
-            <p>trova la tua palestra preferita e inizia subito ad allenarti</p> 
+            <h1>Cerca Palestre</h1><br>
+            <p>trova la tua palestra preferita e inizia subito ad allenarti</p><br><br><br>
         </div>
 
-        <div id="corpo">    
-            <div id="corpoWindow">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h3>Column 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <h3>Column 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <h3>Column 3</h3>        
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                        </div>
-                    </div>
-                </div>   
+        <div class="container"><br>
+
+            <div class="well">
+                <style>
+                    #map {
+                        height: 300px;
+                        width: 100%;
+                    }
+                </style>
+
+                <h2>Cerca la palestra più vicina a te</h2>
+                <div id="map"></div>
+                <script>
+                    function initMap() {
+                        var uluru = {lat: 45.991462, 11.261847};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 4,
+                            center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map
+                        });
+                    }
+                </script>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg1wXIFzFKqNoyFFqdQ7vZwMZAT201ioc&callback=initMap">
+                </script>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
-        </div>
+        </div><br><br>
 
 
 
