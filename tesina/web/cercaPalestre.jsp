@@ -50,46 +50,70 @@
 
         <div class="jumbotron text-center">
             <h1>Cerca Palestre</h1><br>
-            <p>trova la tua palestra preferita e inizia subito ad allenarti</p><br><br><br>
+            <p>trova la palestra adatta a te e inizia subito ad allenarti</p><br><br><br>
         </div>
 
         <div class="container"><br>
 
-            <div class="well">
+            <div class="well">                
+                <h2>Cerca la palestra più vicina a te</h2>
+                <br>
                 <style>
+                    /* Always set the map height explicitly to define the size of the div
+                     * element that contains the map. */
                     #map {
-                        height: 300px;
+                        height: 400px;
                         width: 100%;
                     }
+ 
                 </style>
-
-                <h2>Cerca la palestra più vicina a te</h2>
                 <div id="map"></div>
                 <script>
+
                     function initMap() {
-                        var uluru = {lat: 45.991462, 11.261847};
+
                         var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 4,
-                            center: uluru
+                            zoom: 11,
+                            center: {lat: 45.9914453, lng: 11.262121900000011}
                         });
-                        var marker = new google.maps.Marker({
-                            position: uluru,
-                            map: map
+
+                        // Create an array of alphabetical characters used to label the markers.
+                        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+                        // Add some markers to the map.
+                        // Note: The code uses the JavaScript Array.prototype.map() method to
+                        // create an array of markers based on a given "locations" array.
+                        // The map() method here has nothing to do with the Google Maps API.
+                        var markers = locations.map(function (location, i) {
+                            return new google.maps.Marker({
+                                position: location,
+                                label: labels[i % labels.length]
+                            });
                         });
+
+                        // Add a marker clusterer to manage the markers.
+                        var markerCluster = new MarkerClusterer(map, markers,
+                                {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
                     }
+                    var locations = [
+                        {lat: 45.995794, lng: 11.254286},
+                        {lat: 45.988698, lng: 11.300640},
+                        {lat: 46.069282, lng: 11.237296},
+                        {lat: 46.069079, lng: 11.235836},                        
+                        {lat: 46.094498, lng: 11.109870},
+                        {lat: 46.092993, lng: 11.117968}
+                    ]                                  
                 </script>
+                <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+                </script>    
                 <script async defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg1wXIFzFKqNoyFFqdQ7vZwMZAT201ioc&callback=initMap">
                 </script>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
         </div><br><br>
-
-
-
         <footer class="container-fluid text-center">
             <p>Footer Text</p>
         </footer>
-
     </body>
 </html>

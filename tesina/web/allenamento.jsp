@@ -49,7 +49,7 @@
 
         <div class="jumbotron text-center">
             <h1>Allenamento</h1><br>
-            <p>schede nutrizionali e aerobiche per raggiungere il tuo obbiettivo al meglio</p> 
+            <p>Non perdere tempo, inizia subito ad allenarti</p> 
             <br>
             <br>
             <br>
