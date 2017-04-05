@@ -87,7 +87,7 @@ footer{
 
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+    .row.content {height: 450px }
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -106,7 +106,38 @@ footer{
       .row.content {height:auto;} 
     }
     
+<<<<<<< Updated upstream
    
+=======
+    #corpo {
+        width: 80%;
+        height: 100%;
+        bottom: 0;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+        min-width: 400px;
+        overflow: hidden;
+        
+    }
+
+    #corpoWindow {
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+        border: solid #eee 1px;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 1600px;
+        height: 1000px;
+        text-align: center;
+    }
+    
+>>>>>>> Stashed changes
     h5{
         color: darkgray;
         font-style: italic;    
@@ -115,8 +146,12 @@ footer{
     h2{
         color: grey;
     }
+<<<<<<< Updated upstream
     
     well{
         height: 1000px;
         
     }
+=======
+   
+>>>>>>> Stashed changes
