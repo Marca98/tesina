@@ -33,9 +33,9 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.jsp">Home</a></li>
                         <li><a href="allenamento.jsp">Allenamento</a></li>
-                        <li class="active"><a href="cercaPalestre">Cerca palestre</a></li>
+                        <li class="active"><a href="cercaPalestre.jsp">Cerca palestre</a></li>
                         <li><a href="contatti.jsp">Contatti</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
