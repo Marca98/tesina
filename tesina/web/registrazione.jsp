@@ -51,12 +51,22 @@
                     <span class="input-group-addon" id="basic-addon1">Città</span>
                     <input type="text" class="form-control" placeholder="città" aria-describedby="basic-addon1" name="ct">
                 </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Data di nascita</span>
+                    <input type="text" class="form-control" placeholder="date" aria-describedby="basic-addon1" name="date">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Codice Fiscale</span>
+                    <input type="text" class="form-control" placeholder="codf" aria-describedby="basic-addon1" name="codf">
+                </div>
                 
                 <a href="index.html"><button class="btn btn-primary" type="submit">Submit</button></a>
             </form>
         </div>
+        
+        
+        
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
         <script src="jsGym.js"></script>
 
     </body>
