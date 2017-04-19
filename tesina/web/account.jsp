@@ -33,14 +33,21 @@
                         <li><a href="contatti.jsp">Contatti</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="registrazione.jsp"><span class="glyphicon glyphicon-user"></span> Registrati</a></li>
-                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Accedi</a>                        
+                        <% %>                        
                         </li>
                     </ul>
                 </div>
             </div>
             <div style="height: 1px; background-color:#34889d;"></div>
         </nav>
+
+        <div class="jumbotron text-center">
+            <h1>Benvenuto</h1><br>
+            <p></p> 
+            <br>
+            <br>
+            <br>
+        </div>
 
         <div class="container"><br>
 
