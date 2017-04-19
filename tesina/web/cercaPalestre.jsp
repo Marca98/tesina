@@ -65,7 +65,7 @@
                         height: 400px;
                         width: 100%;
                     }
- 
+
                 </style>
                 <div id="map"></div>
                 <script>
@@ -99,16 +99,35 @@
                         {lat: 45.995794, lng: 11.254286},
                         {lat: 45.988698, lng: 11.300640},
                         {lat: 46.069282, lng: 11.237296},
-                        {lat: 46.069079, lng: 11.235836},                        
+                        {lat: 46.069079, lng: 11.235836},
                         {lat: 46.094498, lng: 11.109870},
                         {lat: 46.092993, lng: 11.117968}
-                    ]                                  
+                    ]
                 </script>
                 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
                 </script>    
                 <script async defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg1wXIFzFKqNoyFFqdQ7vZwMZAT201ioc&callback=initMap">
                 </script>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <h1>Cerca la palestra più vicina a te</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-3">
+                            <form action="" class="search-form">
+                                <div class="form-group has-feedback">
+                                    <label for="search" class="sr-only">Cerca</label>
+                                    <input type="text" class="form-control" name="search" id="search" placeholder="search" name="src">
+                                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
         </div><br><br>
