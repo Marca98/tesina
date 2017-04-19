@@ -33,7 +33,11 @@
                         <li><a href="contatti.jsp">Contatti</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <% %>                        
+                        <% 
+                            session.setAttribute("Nome", "Andrea");
+                            %>
+                        <li><a href="registrazione.jsp"><span class="glyphicon glyphicon-user"></span> Registrati</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Accedi</a>                        
                         </li>
                     </ul>
                 </div>
