@@ -3,7 +3,7 @@
     Created on : 20-mar-2017, 11.41.01
     Author     : iti5a07
 --%>
-
+<%@include file="connessione.jsp"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
