@@ -20,7 +20,7 @@
     <body>
 
         <div id="wrapper">
-            <div id="loginWindow" >
+            <form id="loginWindow" method="POST" action="insert.jsp">
                 <div class="page-header">
                     <p class="left">
                         <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
@@ -29,31 +29,31 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Username</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" name="usr">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon2">Password</span>
-                    <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon2">
+                    <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon2" name="passwd">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Nome</span>
-                    <input type="text" class="form-control" placeholder="nome" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="nome" aria-describedby="basic-addon1" name="name">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Cognome</span>
-                    <input type="text" class="form-control" placeholder="cognome" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="cognome" aria-describedby="basic-addon1" name="surnm" >
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Email</span>
-                    <input type="text" class="form-control" placeholder="email" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="email" aria-describedby="basic-addon1" name="email">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Città</span>
-                    <input type="text" class="form-control" placeholder="città" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="città" aria-describedby="basic-addon1" name="ct">
                 </div>
                 
                 <a href="index.html"><button class="btn btn-primary" type="submit">Submit</button></a>
-            </div>
+            </form>
         </div>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
