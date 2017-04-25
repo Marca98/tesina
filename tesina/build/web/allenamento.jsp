@@ -57,8 +57,28 @@
 
         <div class="container"><br>
 
-            <div class="well">Gym Mate
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-3" >
+                    <img src="muscle_and_strength.jpg" alt=""/>
+                    </div>
+                    <div class="col-sm-8">
+
+                        MUSCOLI E FORZA
+
+                        La nostra gamma per Muscoli & Forza include una serie di prodotti ideati per aumentare la massa magra e la forza oltre che per accelerare il recupero. Da proteine di alta qualità a formule e miscele all-in-one, questa gamma offre tutto ciò di cui si ha bisogno per raggiungere i risultati prefissati e per massimizzare il proprio allenamento.
+
+                        Ideale per:
+
+                        Chiunque stia cercando di sviluppare in maniera rapida ma costante i propri livelli di forza e la propria massa muscolare
+                        Bodybuilder ed atleti che desiderano migliorare la propria forma fisica e le proprie prestazioni
+                        Chiunque voglia accelerare il recupero dopo l’allenamento o desideri aumentare il proprio apporto proteico giornaliero
+                        Coloro che cercano una soluzione all-in-one per ottenere i migliori risultati possibili dall’esercizio fisico
+                    </div>
+                </div>  
+
+
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
             </div>
         </div><br><br>

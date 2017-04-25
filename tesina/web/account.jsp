@@ -33,7 +33,7 @@
                         <li><a href="contatti.jsp">Contatti</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <% 
+                        <%
                             session.setAttribute("Nome", "Andrea");
                         %>
                         <li><a href="registrazione.jsp"><span class="glyphicon glyphicon-user"></span> Registrati</a></li>
@@ -46,7 +46,7 @@
         </nav>
 
         <div class="jumbotron text-center">
-            <h1>Benvenuto</h1><br>
+            <h1>Gestione account</h1><br>
             <p></p> 
             <br>
             <br>
@@ -55,9 +55,8 @@
 
         <div class="container"><br>
 
-            <div class="well">Gym Mate
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+            <div class="well">
+                Creazione Entry: 
             </div>
         </div><br><br>
 

@@ -12,7 +12,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="cssTesina2.css">
-        <link href="index.html">
         <script src="jquery-3.1.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>     
@@ -58,14 +57,10 @@
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Codice Fiscale</span>
                     <input type="text" class="form-control" placeholder="codf" aria-describedby="basic-addon1" name="codf">
-                </div>
-                
-                <a href="index.html"><button class="btn btn-primary" type="submit">Submit</button></a>
+                </div>               
+                <button class="btn btn-primary" type="submit" name ="submit">Submit</button>
             </form>
-        </div>
-        
-        
-        
+        </div>                        
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src="jsGym.js"></script>
 

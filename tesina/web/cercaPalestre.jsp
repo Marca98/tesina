@@ -118,13 +118,18 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4 col-md-offset-3">
-                            <form action="" class="search-form">
-                                <div class="form-group has-feedback">
-                                    <label for="search" class="sr-only">Cerca</label>
-                                    <input type="text" class="form-control" name="search" id="search" placeholder="search" name="src">
-                                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
-                                </div>
-                            </form>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Nome Palestra: </td>
+                                    <input type="text" name="nomePalestra">                             
+                                </tr>
+                                <%
+                
+            %> 
+
+                                </tbody>  
+                            </table>     
                         </div>
                     </div>
                 </div>
