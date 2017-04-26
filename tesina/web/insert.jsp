@@ -21,5 +21,7 @@
         
     stat.executeUpdate (query);
     
+response.sendRedirect("account.jsp");
+    
 %>
 

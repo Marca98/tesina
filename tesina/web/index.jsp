@@ -102,7 +102,8 @@
         <div class="container"><br> 
             <div class="well text-center"> 
                 <h1>Gym Mate</h1><br><br> 
-                <h2>Piani nutrizionali, centinaia di schede, consigli del giorno e valutazione del tuo allenamento : Gym Mate ti aiuterà a raggiungere i tuoi obiettivi rapidamente e vivere una vita più sana</h2> 
+                <h2>Piani nutrizionali, centinaia di schede, consigli del giorno e valutazione del tuo allenamento : Gym Mate ti aiuterà a raggiungere i tuoi obiettivi rapidamente e vivere una vita più sana</h2>
+                <br><h3>Registrati per ottenere il meglio dal sito!</h3>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
             </div> 
  

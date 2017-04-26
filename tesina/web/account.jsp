@@ -1,4 +1,6 @@
 
+<%@ include file="connessione.jsp" %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +13,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="cssTesina.css">
         <link href="jsGym.js">
+        
     </head>
     <link rel="icon" href="muscle.png">
     <body>
@@ -47,7 +50,7 @@
 
         <div class="jumbotron text-center">
             <h1>Gestione account</h1><br>
-            <p></p> 
+            <p>Benvenuto utente</p> 
             <br>
             <br>
             <br>
@@ -56,8 +59,43 @@
         <div class="container"><br>
 
             <div class="well">
-                Creazione Entry: 
+                    <h2>Account Utente</h2>
+                                
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Cognome</th>
+                                <th>Username</th>
+                                <th>Password</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <%
+                                String query = "Select * From \"Utente\" "; 
+                                Statement a = con.createStatement();
+                                ResultSet rs = a.executeQuery(query);
+                                
+                                while(rs.next()){
+                                    
+                                
+                            %>
+                            <tr>                                
+                                <td><%= rs.getString("Nome") %></td>
+                                <td><%= rs.getString("Cognome") %></td>
+                                <td><%= rs.getString("Username") %></td>
+                                <td><%= rs.getString("Password") %></td>
+                            </tr>
+                            <%
+                                
+                                
+                            }%>
+                        </tbody>
+                    </table>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
+            
+
         </div><br><br>
 
         <footer class="container-fluid text-center background-white">

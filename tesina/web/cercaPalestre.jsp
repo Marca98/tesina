@@ -4,6 +4,7 @@
     Author     : iti5a07
 --%>
 
+<%@include file="connessione.jsp"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
@@ -118,19 +119,37 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4 col-md-offset-3">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>Nome Palestra: </td>
-                                    <input type="text" name="nomePalestra">                             
-                                </tr>
-                                <%
-                SELECT "Palestra"("Nome","ORARIO","Costo","Indirizzo")
-                FROM "Palestra" ;
-            %>  
-
-                                </tbody>  
-                            </table>     
+                            <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Telefono</th>
+                                <th>Costo</th>
+                                <th>Orario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <%
+                                String query = "Select * From \"Palestra\" "; 
+                                Statement b = con.createStatement();
+                                ResultSet re = b.executeQuery(query);
+                                
+                                while(re.next()){
+                                    
+                                
+                            %>
+                            <tr>                                
+                                <td><%= re.getString("Nome") %></td>
+                                <td><%= re.getString("Telefono") %></td>
+                                <td><%= re.getString("Costo") %></td>
+                                <td><%= re.getString("Orario") %></td>
+                            </tr>
+                            <%
+                                
+                                
+                            }%>
+                        </tbody>
+                    </table>    
                         </div>
                     </div>
                 </div>
