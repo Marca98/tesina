@@ -125,8 +125,9 @@
                                     <input type="text" name="nomePalestra">                             
                                 </tr>
                                 <%
-                
-            %> 
+                SELECT "Palestra"("Nome","ORARIO","Costo","Indirizzo")
+                FROM "Palestra" ;
+            %>  
 
                                 </tbody>  
                             </table>     

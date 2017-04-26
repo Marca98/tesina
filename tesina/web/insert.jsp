@@ -20,4 +20,6 @@
             "\', \'" + request.getParameter("codf") + "\')";
         
     stat.executeUpdate (query);
+    
 %>
+
