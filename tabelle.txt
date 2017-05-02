@@ -1,0 +1,89 @@
+CREATE TABLE "Utente"
+(
+    "Nome" varchar(20) not null,
+    "Cognome" varchar(25) not null,
+    "Codice_Fiscale" varchar(16) not null,
+    "Email" varchar(40) not null,
+    "Data_Di_Nascita" date not null,
+    "Username" varchar(15) not null,
+    "Password" varchar(20) not null,
+    "Citta" varchar(25) not null,
+    
+    primary key("Codice_Fiscale")
+
+);
+
+create generator "GUtente";
+
+CREATE TABLE "Palestra"
+(
+    "Nome" varchar(20) not null,
+    "Id_Palestra" integer not null,
+    "Email" varchar(40) not null,
+    "Orario" varchar(20) not null,
+    "Indirizzo" varchar(30) not null,
+    "Voto" varchar(5) not null,
+    "Telefono" varchar(12) not null,
+    "Costo" integer not null,
+    
+    primary key("Id_Palestra")
+
+);
+
+create generator "GPalestra";
+
+CREATE TABLE "Cerca"
+(
+    "Id_Cerca" integer not null,
+    "Id_Utente" varchar(16) not null,
+    "Id_Palestra" integer not null,
+    
+    primary key("Id_Cerca"),
+    foreign key("Id_Palestra")references "Palestra"("Id_Palestra"), 
+    foreign key("Id_Utente")references "Utente"("Codice_Fiscale")
+
+);
+
+create generator "GCerca";
+
+CREATE TABLE "Allenamento"
+(
+    "Id_Allenamento" integer not null,
+    "Obiettivo" varchar(20) not null,
+    "Data_Inizio" date not null,
+    "Data_Fine" date not null,
+    "Descrizione" varchar(200) not null,
+    
+    primary key("Id_Allenamento"),
+    foreign key("Id_Utente") references "Utente"("Codice_Fiscale")
+);
+
+create generator "GAllenamento";
+
+CREATE TABLE "Prevede"
+(
+    "Id_Prevede" integer not null,
+    "Id_Allenamento" integer not null,
+    "Id_Scheda" integer not null,
+    
+    primary key("Id_Prevede"),
+    foreign key("Id_Allenamento")references "Palestra"("Id_Allenamento"), 
+    foreign key("Id_Scheda")references "Utente"("Id_Scheda")
+
+);
+
+create generator "GPrevede";
+
+CREATE TABLE "Scheda"
+(
+    "Id_Scheda" integer not null,
+    "Programma" varchar(1000) not null,
+    "Data_Inizio" date not null,
+    "Data_Fine" date not null,
+    "Voto" varchar(5) not null,
+    
+    primary key ("Id_Scheda")
+
+);
+
+create generator "GScheda";

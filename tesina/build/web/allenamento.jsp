@@ -41,7 +41,7 @@
             </div>
             <div style="height: 1px; background-color:#34889d;"></div>
         </nav>
-
+        
         <div class="jumbotron text-center">
             <h1>Allenamento</h1><br>
             <p>Non perdere tempo, inizia subito ad allenarti</p> 
@@ -49,7 +49,6 @@
             <br>
             <br>
         </div>
-
         <div class="container"><br>
             <div class="well">
                 <div class="row">
@@ -57,21 +56,17 @@
                         <img src="muscle_and_strength.jpg" width="100%" alt=""/>
                     </div>
                     <div class="col-md-6 col-sm-6 ">
-
                         <h2>MUSCOLI E FORZA</h2><br>
-
                         <h3>La nostra gamma per Muscoli & Forza include una serie di prodotti ideati per aumentare la massa magra e la forza oltre che per accelerare il recupero.</h3><br>
-
                         <br>Ideale per:<br>
 
                         <br>Chiunque stia cercando di sviluppare in maniera rapida ma costante i propri livelli di forza e la propria massa muscolare
                         Bodybuilder ed atleti che desiderano migliorare la propria forma fisica e le proprie prestazioni
                         Chiunque voglia accelerare il recupero dopo l’allenamento o desideri aumentare il proprio apporto proteico giornaliero
                         Coloro che cercano una soluzione all-in-one per ottenere i migliori risultati possibili dall’esercizio fisico<br>
-
                         <br><button type="button" class="btn btn-primary" style="text-align: center">Scegli piano</button>
-                    </div>
-                </div> 
+                    </div><br>
+                </div>
                 <hr>
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
@@ -100,7 +95,6 @@
                     </div>
                 </div>
                 <hr>
-
                 <div class="row">
 
                     <div class="col-md-6 col-sm-6">
@@ -116,14 +110,12 @@
                         <img src="lean_muscle.jpg"  width="100%"alt=""/>
                     </div>
                 </div>
-
                 <br><br>
-
             </div>
         </div><br><br>
 
         <footer class="container-fluid text-center background-white">
-            <p>Footer Text</p>
+            <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
         </footer>
 
     </body>

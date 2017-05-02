@@ -1,9 +1,3 @@
-<%-- 
-    Document   : schede
-    Created on : 27-mar-2017, 11.35.39
-    Author     : iti5a07
---%>
-
 <%@include file="connessione.jsp"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -118,7 +112,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 col-md-offset-3">
+                        <div class="col-md-4 col-md-offset-3">   
                             <table class="table table-striped">
                         <thead>
                             <tr>
@@ -157,7 +151,7 @@
             </div>
         </div><br><br>
         <footer class="container-fluid text-center">
-            <p>Footer Text</p>
+            <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
         </footer>
     </body>
 </html>

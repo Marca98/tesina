@@ -16,7 +16,7 @@
             "\', \'" + request.getParameter("usr") + 
             "\' , \'" + request.getParameter("passwd") + 
             "\', \'" + request.getParameter("email") + 
-            "\',  \'" + request.getParameter("date") + 
+            "\',  \'" + request.getParameter("date") +
             "\', \'" + request.getParameter("codf") + "\')";
         
     stat.executeUpdate (query);

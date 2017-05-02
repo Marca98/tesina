@@ -7,9 +7,6 @@
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <web-module-libraries>
                 <library dirs="200">
-                    <file>${file.reference.jaybird-full-2.2.11.jar}</file>
-                </library>
-                <library dirs="200">
                     <file>${file.reference.jaybird-full-2.2.11.jar-1}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>

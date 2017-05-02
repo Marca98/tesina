@@ -55,7 +55,7 @@
             </div>
         </div><br><br><br>
         <footer class="container-fluid text-center">
-            <p>Footer Text</p>
+            <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
         </footer>
 
     </body>

@@ -3,7 +3,7 @@
 
 <%
     final String DRIVER = "org.firebirdsql.jdbc.FBDriver"; //Nome del driver
-    final String DB_NAME = "jdbc:firebirdsql://localhost:3050/C:/lavoro/TESINA.FDB"; //Nome del database completo di percorso
+    final String DB_NAME = "jdbc:firebirdsql://localhost:3050/C:/Users/Andrea/Desktop/TESINA2.FDB"; //Nome del database completo di percorso
     final String DB_USER = "SYSDBA"; // Nome utente
     final String DB_PASSWORD = "masterkey"; //Password
 
@@ -16,8 +16,10 @@
         con = DriverManager.getConnection(DB_NAME, DB_USER, DB_PASSWORD); //Effettua la connessione al database
         stat = con.createStatement();
           
-        //out.println("Ti sei registrato con successo!");
+       // out.println("Ti sei registrato con successo!");
     } catch (Exception e) {
-        //out.println(e.getMessage());
+        out.println(e.getMessage());
     }
 %>
+
+
