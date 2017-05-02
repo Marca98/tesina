@@ -104,22 +104,26 @@
                 <script async defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg1wXIFzFKqNoyFFqdQ7vZwMZAT201ioc&callback=initMap">
                 </script>
+                
+                <br><br><br>
 
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
-                            <h1>Cerca la palestra più vicina a te</h1>
+                            
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 col-md-offset-3">   
-                            <table class="table table-striped">
+                            <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th>Nome</th>
-                                <th>Telefono</th>
-                                <th>Costo</th>
-                                <th>Orario</th>
+                                <th> Nome </th>
+                                <th> Telefono </th>
+                                <th> Costo </th>
+                                <th> Orario </th>
+                                <th> Voto </th>
+                                <th> Indirizzo </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -133,10 +137,12 @@
                                 
                             %>
                             <tr>                                
-                                <td><%= re.getString("Nome") %></td>
-                                <td><%= re.getString("Telefono") %></td>
-                                <td><%= re.getString("Costo") %></td>
-                                <td><%= re.getString("Orario") %></td>
+                                <td> <%= re.getString("Nome") %> </td>
+                                <td> <%= re.getString("Telefono") %> </td>
+                                <td> <%= re.getString("Costo") %> </td>
+                                <td> <%= re.getString("Orario") %> </td>
+                                <td> <%= re.getString("Voto") %> </td>
+                                <td> <%= re.getString("Indirizzo") %> </td> 
                             </tr>
                             <%
                                 

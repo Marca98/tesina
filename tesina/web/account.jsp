@@ -35,9 +35,7 @@
                         <li><a href="cercaPalestre.jsp">Cerca palestre</a></li>
                         <li><a href="contatti.jsp">Contatti</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-       
-                        <li><%= session.getAttribute("Nome", "Andrea")%></li>
+                    <ul class="nav navbar-nav navbar-right">     
                                        
                         </li>
                     </ul>
@@ -97,7 +95,7 @@
         </div><br><br>
 
         <footer class="container-fluid text-center background-white">
-            <p>Footer Text</p>
+            <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
         </footer>
 
     </body>

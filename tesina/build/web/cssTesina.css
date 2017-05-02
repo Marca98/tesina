@@ -6,6 +6,7 @@ body{
     background: -webkit-linear-gradient(#648880, #293f50);
     background:    -moz-linear-gradient(#648880, #293f50);
     background:         linear-gradient(#648880, #293f50);
+    
 }
 
 footer{ 
@@ -170,4 +171,9 @@ well{
     color: #3596e0;
     left: initial;
     font-size: 14px;
+}
+
+@font-face {
+   font-family: 'FTY DELIRIUM NCV.ttf';
+   src: url('C:\Users\Andrea\Desktop\TESINA_GYM\tesina') format('ttf');
 }
