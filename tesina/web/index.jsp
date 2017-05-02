@@ -11,21 +11,21 @@
         <link rel="stylesheet" href="cssTesina.css"> 
         <link href="jsGym.js"> 
         <style> 
- 
+
             /* Add a gray background color and some padding to the footer */ 
             footer { 
                 background-color: #f2f2f2; 
                 padding: 25px; 
             } 
- 
+
             .carousel-inner img { 
                 width: 100%;/* Set width to 100% */ 
                 height: 500px;                              
- 
+
                 /*margin: auto;*/ 
                 min-height:300px; 
             } 
- 
+
             /* Hide the carousel text when the screen is less than 600 pixels wide */ 
             @media (max-width: 400px) { 
                 .carousel-caption { 
@@ -36,7 +36,7 @@
         <link rel="icon" href="muscle.png"> 
     </head> 
     <body> 
- 
+
         <nav class="navbar-default navbar-fixed-top " > 
             <div class="container-fluid"> 
                 <div class="navbar-header"> 
@@ -63,31 +63,31 @@
             </div> 
             <div style="height: 1px; background-color:#34889d;"></div> 
         </nav> 
- 
+
         <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
             <!-- Indicators --> 
             <ol class="carousel-indicators"> 
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
                 <li data-target="#myCarousel" data-slide-to="1"></li> 
             </ol> 
- 
+
             <!-- Wrapper for slides --> 
             <div class="carousel-inner" role="listbox"> 
                 <div class="item active"> 
                     <img src="Gym-HD-Wallpaper.jpg" alt="Image"> 
                     <div class="carousel-caption"> 
- 
+
                     </div>       
                 </div> 
- 
+
                 <div class="item"> 
                     <img src="Gym-Wallpaper-.jpg" alt="Image"> 
                     <div class="carousel-caption"> 
- 
+
                     </div>       
                 </div> 
             </div> 
- 
+
             <!-- Left and right controls --> 
             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> 
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
@@ -98,18 +98,29 @@
                 <span class="sr-only">Next</span> 
             </a> 
         </div> 
- 
+
         <div class="container"><br> 
             <div class="well text-center"> 
                 <h1>Gym Mate</h1><br><br> 
                 <h2>Piani nutrizionali, centinaia di schede, consigli del giorno e valutazione del tuo allenamento : Gym Mate ti aiuterà a raggiungere i tuoi obiettivi rapidamente e vivere una vita più sana</h2>
-                <br><h3>Registrati per ottenere il meglio dal sito!</h3>
+
+
+                <br><h2>Siamo qui per aiutarti a crescere.</h2><br>
+                <div class="row">
+                    <div class="col-md-4"><BR><img src="burn.png"width="50%"/><br><br>BRUCIA GRASSI</div>
+
+                    <div class="col-md-4"><br><img src="build.png" width="50%"/><br><br>COSTRUISCI SANO IL TUO CORPO</div>
+                    <div class="col-md-4"><br><img src="transform.png" width="50%"/><br><br>TRASFORMATI</div>
+                </div>  
+
+
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
             </div> 
- 
+
         </div> 
-        <br><br> 
- 
+        <br><h3>Registrati per ottenere il meglio dal sito!</h3>
+        <br><br>
+
         <footer class="container-fluid text-center"> 
             <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p> 
         </footer> 
