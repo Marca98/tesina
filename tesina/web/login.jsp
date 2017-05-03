@@ -11,9 +11,7 @@
         <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>     
     </head>
     <body>
-        <% 
-                            session.setAttribute("Nome", "Andrea");
-                            %>
+
         <div id="wrapper">
             
             <form id="loginWindow" method="POST" action="insert.jsp">
@@ -33,6 +31,7 @@
                 </div>
                 <button class="btn btn-primary" type="submit" name ="submit">Submit</button>
             </form>
+            
         </div>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
