@@ -25,11 +25,11 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Username</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" name="usr">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon2">Password</span>
-                    <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon2">
+                    <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon2" name="passwd">
                 </div>
                 <button class="btn btn-primary" type="submit" name ="submit">Submit</button>
             </form>

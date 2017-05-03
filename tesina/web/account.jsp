@@ -64,6 +64,7 @@
                                 <th>Cognome</th>
                                 <th>Username</th>
                                 <th>Password</th>
+                                <th>Codice Fiscale</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -81,6 +82,7 @@
                                 <td><%= rs.getString("Cognome") %></td>
                                 <td><%= rs.getString("Username") %></td>
                                 <td><%= rs.getString("Password") %></td>
+                                <td><%= rs.getString("Codice_Fiscale") %></td>
                             </tr>
                             <%
                                 
@@ -88,6 +90,37 @@
                             }%>
                         </tbody>
                     </table>
+                        <h2>Piano Nutrizionale</h2>
+                         <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Utente</th>
+                                <th>Inizio</th>
+                                <th>Fine</th>
+                                <th>Tipo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <%
+                                String querys = "Select * From \"Allenamento\" "; 
+                                Statement b = con.createStatement();
+                                ResultSet re = b.executeQuery(query);
+                                
+                                while(re.next()){
+                                    
+                                
+                            %>
+                            <tr>                                
+                                <td><%= re.getString("ID") %></td>
+                                <td><%= re.getString("Id_Utente") %></td>
+                                <td><%= re.getString("Data_Inizio") %></td>
+                                <td><%= re.getString("Data_Fine") %></td>
+                                <td><%= re.getString("Obiettivo") %></td>
+                            </tr>
+                        </tbody>
+                         </table>
+                        <h2></h2>
                     <br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
             

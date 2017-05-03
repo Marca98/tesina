@@ -15,6 +15,7 @@ CREATE TABLE "Utente"
 
 create generator "GUtente";
 
+
 CREATE TABLE "Palestra"
 (
     "Nome" varchar(20) not null,
@@ -32,6 +33,7 @@ CREATE TABLE "Palestra"
 
 create generator "GPalestra";
 
+
 CREATE TABLE "Cerca"
 (
     "Id_Cerca" integer not null,
@@ -45,6 +47,7 @@ CREATE TABLE "Cerca"
 );
 
 create generator "GCerca";
+
 
 CREATE TABLE "Allenamento"
 (
@@ -60,6 +63,7 @@ CREATE TABLE "Allenamento"
 
 create generator "GAllenamento";
 
+
 CREATE TABLE "Prevede"
 (
     "Id_Prevede" integer not null,
@@ -73,6 +77,7 @@ CREATE TABLE "Prevede"
 );
 
 create generator "GPrevede";
+
 
 CREATE TABLE "Scheda"
 (
