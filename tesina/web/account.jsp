@@ -1,7 +1,6 @@
 
-<%@ include file="connessione.jsp" %>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ include file="connessione.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,9 +12,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="cssTesina.css">
         <link href="jsGym.js">
-        
+        <link rel="icon" href="muscle.png">
     </head>
-    <link rel="icon" href="muscle.png">
+
     <body>
 
         <nav class="navbar-default navbar-fixed-top " >
@@ -36,8 +35,7 @@
                         <li><a href="contatti.jsp">Contatti</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">     
-                                       
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -55,75 +53,80 @@
         <div class="container"><br>
 
             <div class="well">
-                    <h2>Account Utente</h2>
-                                
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Cognome</th>
-                                <th>Username</th>
-                                <th>Password</th>
-                                <th>Codice Fiscale</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <%
-                                String query = "Select * From \"Utente\" "; 
-                                Statement a = con.createStatement();
-                                ResultSet rs = a.executeQuery(query);
-                                
-                                while(rs.next()){
-                                    
-                                
-                            %>
-                            <tr>                                
-                                <td><%= rs.getString("Nome") %></td>
-                                <td><%= rs.getString("Cognome") %></td>
-                                <td><%= rs.getString("Username") %></td>
-                                <td><%= rs.getString("Password") %></td>
-                                <td><%= rs.getString("Codice_Fiscale") %></td>
-                            </tr>
-                            <%
-                                
-                                
+                <h2>Account Utente</h2>
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Cognome</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Codice Fiscale</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%                                String query = "Select * From \"Utente\" ";
+                            Statement a = con.createStatement();
+                            ResultSet rs = a.executeQuery(query);
+
+                            while (rs.next()) {
+
+
+                        %>
+                        <tr>                                
+                            <td><%= rs.getString("Nome")%></td>
+                            <td><%= rs.getString("Cognome")%></td>
+                            <td><%= rs.getString("Username")%></td>
+                            <td><%= rs.getString("Password")%></td>
+                            <td><%= rs.getString("Codice_Fiscale")%></td>
+                            <td><%= rs.getString("Citta")%></td>
+                            <td><%= rs.getString("Data_Di_Nascita")%></td>
+
+                        </tr>
+                        <%
+
                             }%>
-                        </tbody>
-                    </table>
-                        <h2>Piano Nutrizionale</h2>
-                         <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Utente</th>
-                                <th>Inizio</th>
-                                <th>Fine</th>
-                                <th>Tipo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <%
-                                String querys = "Select * From \"Allenamento\" "; 
-                                Statement b = con.createStatement();
-                                ResultSet re = b.executeQuery(query);
-                                
-                                while(re.next()){
-                                    
-                                
-                            %>
-                            <tr>                                
-                                <td><%= re.getString("ID") %></td>
-                                <td><%= re.getString("Id_Utente") %></td>
-                                <td><%= re.getString("Data_Inizio") %></td>
-                                <td><%= re.getString("Data_Fine") %></td>
-                                <td><%= re.getString("Obiettivo") %></td>
-                            </tr>
-                        </tbody>
-                         </table>
-                        <h2></h2>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </tbody>
+                </table>
+                <h2>Piano Nutrizionale</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Utente</th>
+                            <th>Inizio</th>
+                            <th>Fine</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%
+                            String querys = "Select * From \"Allenamento\" ";
+                            Statement b = con.createStatement();
+                            ResultSet re = b.executeQuery(query);
+
+                            while (re.next()) {
+
+
+                        %>
+                        <tr>                                
+                            <td><%= re.getString("Id_Allenamento")%></td>
+                            <td><%= re.getString("Id_Utente")%></td>
+                            <td><%= re.getString("Data_Inizio")%></td>
+                            <td><%= re.getString("Data_Fine")%></td>
+                            <td><%= re.getString("Obiettivo")%></td>
+
+                        </tr>
+                                               <%
+
+                            }%>
+                    </tbody>
+                </table>
+                <h2></h2>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
-            
+
 
         </div><br><br>
 
