@@ -122,7 +122,7 @@
                                 <th> Telefono </th>
                                 <th> Costo </th>
                                 <th> Orario </th>
-                                <th> Voto </th>
+                                <!--<th> Voto </th>-->
                                 <th> Indirizzo </th>
                             </tr>
                         </thead>
@@ -141,7 +141,7 @@
                                 <td> <%= re.getString("Telefono") %> </td>
                                 <td> <%= re.getString("Costo") %> </td>
                                 <td> <%= re.getString("Orario") %> </td>
-                                <td> <%= re.getString("Voto") %> </td>
+                              
                                 <td> <%= re.getString("Indirizzo") %> </td> 
                             </tr>
                             <%

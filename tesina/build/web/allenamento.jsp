@@ -99,7 +99,7 @@
                         Oltre ai nostri famosi prodotti ENER:GEL, offriamo integratori adatti alle varie fasi dell’allenamento: prima (PRE:PARE), durante (PRO:LONG) e dopo (RE:CHARGE). Ciclisti, corridori, maratoneti o atleti triathlon non potranno chiedere di più.<br>
                         <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Scegli piano</button>
                         <!-- Modal -->
-                        <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal fade" id="myModal2" role="dialog">
                             <div class="modal-dialog">
 
                                 <!-- Modal content-->
@@ -136,7 +136,7 @@
 
                         <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Scegli piano</button>
                         <!-- Modal -->
-                        <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal fade" id="myModal3" role="dialog">
                             <div class="modal-dialog">
 
                                 <!-- Modal content-->
@@ -169,7 +169,7 @@
 
                         <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Scegli piano</button>
                         <!-- Modal -->
-                        <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal fade" id="myModal4" role="dialog">
                             <div class="modal-dialog">
 
                                 <!-- Modal content-->
