@@ -14,7 +14,7 @@
 
         <div id="wrapper">
             
-            <form id="loginWindow" method="POST" action="insert.jsp">
+            <form id="loginWindow" method="POST" action="logga.jsp">
                 <div class="page-header">
                     <p class="left">
                         <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
