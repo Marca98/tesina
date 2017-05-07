@@ -104,55 +104,48 @@
                 <script async defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg1wXIFzFKqNoyFFqdQ7vZwMZAT201ioc&callback=initMap">
                 </script>
-                
-                <br><br><br>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                            
+                <br><br><br>
+                <form method="get" action="tableP.jsp">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 col-md-offset-3">   
-                            <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th> Nome </th>
-                                <th> Telefono </th>
-                                <th> Costo </th>
-                                <th> Orario </th>
-                                <th> Voto </th>
-                                <th> Indirizzo </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <%
-                                String query = "Select * From \"Palestra\" "; 
-                                Statement b = con.createStatement();
-                                ResultSet re = b.executeQuery(query);
-                                
-                                while(re.next()){
-                                    
-                                
-                            %>
-                            <tr>                                
-                                <td> <%= re.getString("Nome") %> </td>
-                                <td> <%= re.getString("Telefono") %> </td>
-                                <td> <%= re.getString("Costo") %> </td>
-                                <td> <%= re.getString("Orario") %> </td>
-                                <td> <%= re.getString("Voto") %> </td>
-                                <td> <%= re.getString("Indirizzo") %> </td> 
-                            </tr>
-                            <%
-                                
-                                
-                            }%>
-                        </tbody>
-                    </table>    
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-3">   
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th> Nome </th>
+                                            <th> Telefono </th>
+                                            <th> Costo </th>
+                                            <th> Orario </th>
+                                            <th> Voto </th>
+                                            <th> Indirizzo </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    </tbody>
+                                </table>  
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
         </div><br><br>

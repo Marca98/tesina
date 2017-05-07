@@ -102,7 +102,7 @@
         <div class="container"><br> 
             <div class="well text-center"> 
                 <h1>Gym Mate</h1><br><br> 
-                <h2>Piani nutrizionali, centinaia di schede, consigli del giorno e valutazione del tuo allenamento : Gym Mate ti aiuterà a raggiungere i tuoi obiettivi rapidamente e vivere una vita più sana</h2>
+                <h2>Piani nutrizionali, schede, consigli del giorno e valutazione del tuo allenamento : Gym Mate ti aiuterà a raggiungere i tuoi obiettivi rapidamente e vivere una vita più sana</h2>
 
 
                 <br><h2>Siamo qui per aiutarti a crescere.</h2><br>
@@ -110,19 +110,63 @@
                     <div class="col-md-4"><BR><img src="burn.png"width="50%"/><br><br>BRUCIA GRASSI</div>
 
                     <div class="col-md-4"><br><img src="build.png" width="50%"/><br><br>COSTRUISCI SANO IL TUO CORPO</div>
-                    <div class="col-md-4"><br><img src="transform.png" width="50%"/><br><br>TRASFORMATI</div>
-                </div>  
+                    <div class="col-md-4"><br><img src="transform.png" width="50%"/><br><br>MANTIENI LA FORMA</div>
+
+                </div>
+                <br><br><br><br><br><br><br><br>
+                <h2>Notizie recenti</h2>
+                <hr>
+                <h3>Mal di schiena e BodyBuilding</h3>
+                <p>Mal di schiena: le cause di dolori, debolezze e problemi di varia natura alla schiena possono essere dovute a numerosi e differenti fattori, per questo spesso nel trattare la patologia intervengono varie figure professionali (fisioterapisti, osteopati, medici ortopedici). Chi pratica bodybuilding sottopone la schiena a una serie di sollecitazioni che possono dare origine a dolori e fastidi, qualora non si mantenga la giusta postura e non si distribuiscano lo sforzo e il peso in modo omogeneo e regolare tra i [...]</p>
+                <hr>
+                <h5><span class="glyphicon glyphicon-time"></span> Post by Faizzio Faizz, Settembre 24, 2016.</h5>
+                <h5><span class="label label-success">Lorem</span></h5><br>
+
+                <h4>Lasciaci un commento:</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Invia</button>
+                </form>
+                <br><br>
+
+                <p><span class="badge">2</span>Commenti:</p><br>
+
+                <div class="row">
+                    <div class="col-sm-2 text-center">
+                        <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+                        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+                        <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <br>
+                        <p><span class="badge">1</span> Comment:</p><br>
+            </div>
+        </div>
+    </div>
 
 
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
-            </div> 
 
-        </div> 
-        <br><h3>Registrati per ottenere il meglio dal sito!</h3>
-        <br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>Registrati per ottenere il meglio dal sito!</h3>
+</div> 
 
-        <footer class="container-fluid text-center"> 
-            <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p> 
-        </footer> 
-    </body> 
+</div> 
+<br>
+<br><br>
+
+<footer class="container-fluid text-center"> 
+    <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
+    <hr>
+</footer> 
+</body> 
 </html> 

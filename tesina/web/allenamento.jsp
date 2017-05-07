@@ -64,12 +64,11 @@
                         Bodybuilder ed atleti che desiderano migliorare la propria forma fisica e le proprie prestazioni
                         Chiunque voglia accelerare il recupero dopo l’allenamento o desideri aumentare il proprio apporto proteico giornaliero
                         Coloro che cercano una soluzione all-in-one per ottenere i migliori risultati possibili dall’esercizio fisico<br>
-                        <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Scegli piano</button>
+                        <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#muscoli">Scegli piano</button>
                         <!-- Modal -->
-                        <div class="modal fade" id="myModal" role="dialog">
-                            <div class="modal-dialog">
 
-                                <!-- Modal content-->
+                        <div class="modal fade bs-example-modal-lg" id="muscoli" role="dialog" aria-labelledby="myLargeModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -78,45 +77,47 @@
                                     <div class="modal-body">
                                         <img src="enorme.jpg" width="100%"/>
                                         <hr>                                    
-                                        <p>a breve...</p>
                                         
+                                       
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                    </div><br>
+                            </div>                       
+                        </div><br>
+                    </div>
                 </div>
+
+
+
                 <hr>
+
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <h2>ENERGIA E RESISTENZA</h2><br>
                         <h3>La nostra gamma per Energia & Resistenza comprende una varia selezione di prodotti altamente energetici ideati per coloro che affrontano esercizi ad alta intensita’e sport di resistenza.</h3><br>
 
                         Oltre ai nostri famosi prodotti ENER:GEL, offriamo integratori adatti alle varie fasi dell’allenamento: prima (PRE:PARE), durante (PRO:LONG) e dopo (RE:CHARGE). Ciclisti, corridori, maratoneti o atleti triathlon non potranno chiedere di più.<br>
-                        <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Scegli piano</button>
+                        <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#energy">Scegli piano</button>
                         <!-- Modal -->
-                        <div class="modal fade" id="myModal" role="dialog">
-                            <div class="modal-dialog">
-
-                                <!-- Modal content-->
+                        <div class="modal fade bs-example-modal-lg" id="energy" role="dialog" aria-labelledby="myLargeModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Modal Header</h4>
+                                        <h4 class="modal-title" >ENERGIA E RESISTENZA</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Some text in the modal.</p>
+                                        <img src="endurance.jpg"  width="100%" alt=""/>
+                                        <hr>                                    
+                                        <p>a breve...</p>                                  
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
-
-                            </div>
+                            </div>                       
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6" >
@@ -134,26 +135,25 @@
 
                         L'approccio migliore per perdere massa grassa è sempre quello di apportare cambiamenti nello stile di vita, inserendo nella routine quotidiana esercizi e un'alimentazione equilibrata e ben strutturata. Myprotein ti offre un’intera gamma per supportare la tua perdita di peso in maniera sana e sostenibile.<br>
 
-                        <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Scegli piano</button>
+                        <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#dieta">Scegli piano</button>
                         <!-- Modal -->
-                        <div class="modal fade" id="myModal" role="dialog">
-                            <div class="modal-dialog">
-
-                                <!-- Modal content-->
+                        <div class="modal fade bs-example-modal-lg" id="dieta" role="dialog" aria-labelledby="myLargeModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Modal Header</h4>
+                                        <h4 class="modal-title" >DIETA E PERDITA DI PESO</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Some text in the modal.</p>
+                                        <img src="weight.jpg" width="100%"/>
+                                        <hr>                                    
+                                        <p>a breve...</p>                                  
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
-
-                            </div>
+                            </div>                       
                         </div>
                     </div>
                 </div>
@@ -167,26 +167,26 @@
 
                         La sfida maggiore è trovare il giusto equilibrio e consumare una quantità di calorie a sostenere la crescita muscolare senza accumulare grasso superfluo. Bisogna seguire un'alimentazione che porti a un consumo sufficiente di proteine per favorire la crescita muscolare, mentre i carboidrati sono fondamentali per fornire energia al corpo e assicurare un allenamento intenso. Per mantenere questo delicato equilibrio, Myprotin ha creato un agamma di integratori pre, intra e post workout per accompagnarti nella costruzione di massa magra.<br>
 
-                        <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Scegli piano</button>
+                        <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#massam">Scegli piano</button>
                         <!-- Modal -->
-                        <div class="modal fade" id="myModal" role="dialog">
-                            <div class="modal-dialog">
-
-                                <!-- Modal content-->
+                        <div class="modal fade bs-example-modal-lg" id="massam" role="dialog" aria-labelledby="myLargeModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Modal Header</h4>
+                                        <h4 class="modal-title" >MASSA MAGRA</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Some text in the modal.</p>
+
+                                        <img src="leanfaiz.jpg" width="100%"alt=""/>
+                                        <hr>                                    
+                                        <p>a breve...</p>                                  
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
-
-                            </div>
+                            </div>                       
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6" >

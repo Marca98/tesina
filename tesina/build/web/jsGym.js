@@ -6,3 +6,4 @@ $( document ).ready( function(){
     .delay(850)
     .animate({ 'opacity': '100' }, 7000);
 });
+
