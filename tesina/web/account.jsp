@@ -36,7 +36,7 @@
                         <li><a href="contatti.jsp">Contatti</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li>Benvenuto <%= request.getParameter("usr") %>
+                        <li>Benvenuto <%= request.getParameter("usr") %></li>
                         <li><a href="logout.jsp">Logout</a></li>
                                        
                         </li>
@@ -57,7 +57,9 @@
         <div class="container"><br>
 
             <div class="well">
-                    <h2>Account Utente</h2>
+                <h2>Account Utente</h2><br><br>
+                
+                    <h3>Gestione</h3>
                                 
                     <table class="table table-striped">
                         <thead>
@@ -66,6 +68,7 @@
                                 <th>Cognome</th>
                                 <th>Username</th>
                                 <th>Password</th>
+                                <th>Codice Fiscale</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -83,12 +86,29 @@
                                 <td><%= rs.getString("Cognome") %></td>
                                 <td><%= rs.getString("Username") %></td>
                                 <td><%= rs.getString("Password") %></td>
+                                <td><%= rs.getString("Codice_Fiscale") %></td>
                             </tr>
                             <%
                                 
                                 
                             }%>
+                                                        
                         </tbody>
+                    </table>
+                        
+                        <h3>Piani utente</h3>
+                        <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Obiettivo</th>
+                                <th>N°</th>
+                                <th>Data inizio</th>
+                                <th>Data fine</th>
+                                <th>Scheda N°</th>                                
+                            </tr>
+                        </thead>
+                            
+                        
                     </table>
                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>

@@ -30,7 +30,7 @@
                 try {
                     st = con.createStatement();
 
-                    query = "SELECT a.\"Username\" FROM \"Utente\" a WHERE \"Username\" = '" + Username + "' AND \"Password\" = '" + Password + "' ";
+                    query = "SELECT \"Username\" FROM \"Utente\" a WHERE \"Username\" = '" + Username + "' AND \"Password\" = '" + Password + "' ";
 
                     rs = st.executeQuery(query);
 
@@ -53,7 +53,7 @@
         %>
         <div id="wrapper">
 
-            <form id="loginWindow" method="POST" action="login.jsp">
+            <form id="loginWindow" method="POST" action="account.jsp">
                 <div class="page-header">
                     <p class="left">
                         <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
