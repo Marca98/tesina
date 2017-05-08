@@ -35,7 +35,9 @@
                         <li><a href="cercaPalestre.jsp">Cerca palestre</a></li>
                         <li><a href="contatti.jsp">Contatti</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">     
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>Benvenuto <%= request.getParameter("usr") %>
+                        <li><a href="logout.jsp">Logout</a></li>
                                        
                         </li>
                     </ul>
@@ -88,7 +90,7 @@
                             }%>
                         </tbody>
                     </table>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
             
 

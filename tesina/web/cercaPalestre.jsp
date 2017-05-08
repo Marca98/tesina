@@ -106,7 +106,7 @@
                 </script>
 
                 <br><br><br>
-                <form method="get" action="tableP.jsp">
+                <form method="get" >
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search" name="search">
                         <div class="input-group-btn">
@@ -129,17 +129,32 @@
                                             <th> Telefono </th>
                                             <th> Costo </th>
                                             <th> Orario </th>
-                                            <th> Voto </th>
+                                           
                                             <th> Indirizzo </th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <table>                                       
+                                    <%  
+                                        String query = "Select * From \"Palestra\" ";
+                                        Statement b = con.createStatement();
+                                        ResultSet re = b.executeQuery(query);
+
+                                        while (re.next()) {
+
+
+                                    %>
+                                    <tr>                                
+                                        <td> <%= re.getString("Nome")%> </td>
+                                        <td> <%= re.getString("Telefono")%> </td>
+                                        <td> <%= re.getString("Costo")%> </td>
+                                        <td> <%= re.getString("Orario")%> </td>
+                                        
+                                        <td> <%= re.getString("Indirizzo")%> </td> 
+                                    </tr>
+                                    <%
+
+                                                                            }%>
                                     </tbody>
                                 </table>  
                             </div>
