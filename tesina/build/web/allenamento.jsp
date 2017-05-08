@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,11 +75,10 @@
                                     </div>
                                     <div class="modal-body">
                                         <img src="enorme.jpg" width="100%"/>
-                                        <hr>                                    
-                                        
-                                       
+                                        <hr>                                                                                                                
                                     </div>
                                     <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Save changes</button>
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
@@ -88,9 +86,6 @@
                         </div><br>
                     </div>
                 </div>
-
-
-
                 <hr>
 
                 <div class="row">
@@ -114,6 +109,7 @@
                                         <p>a breve...</p>                                  
                                     </div>
                                     <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Save changes</button>
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
@@ -150,6 +146,7 @@
                                         <p>a breve...</p>                                  
                                     </div>
                                     <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Save changes</button>
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
@@ -183,6 +180,7 @@
                                         <p>a breve...</p>                                  
                                     </div>
                                     <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Save changes</button>
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
@@ -196,10 +194,8 @@
                 <br><br>
             </div>
         </div><br><br>
-
         <footer class="container-fluid text-center background-white">
             <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
         </footer>
-
     </body>
 </html>
