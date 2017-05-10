@@ -75,10 +75,51 @@
                                     </div>
                                     <div class="modal-body">
                                         <img src="enorme.jpg" width="100%"/>
-                                        <hr>                                                                                                                
+                                        <hr>
+                                        <h3>Crea la tua scheda personalizzata</h3>
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="usr">Obiettivo: </label>
+                                                <input type="text" class="form-control" id="usr">
+                                            </div>
+
+                                            <label for="usr">Durata: </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="">4 settimane
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="">6 settimane
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="">8 settimane
+                                            </label>
+                                            <br>
+                                            <br>
+                                            <label for="usr">Frequenza: </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">Monofrequenza
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">Multifrequenza
+                                            </label>
+                                        </form>
+                                        <br>
+                                        <form>
+                                            <label for="usr">Sedute:  </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">3
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">4
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">5
+                                            </label>
+                                        </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-primary">Ok</button>
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
@@ -105,11 +146,52 @@
                                     </div>
                                     <div class="modal-body">
                                         <img src="endurance.jpg"  width="100%" alt=""/>
-                                        <hr>                                    
-                                        <p>a breve...</p>                                  
+                                        <hr>
+                                        <h3>Crea la tua scheda personalizzata</h3>
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="usr">Obiettivo: </label>
+                                                <input type="text" class="form-control" id="usr">
+                                            </div>
+
+                                            <label for="usr">Durata: </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="">4 settimane
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="">6 settimane
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="">8 settimane
+                                            </label>
+                                            <br>
+                                            <br>
+                                            <label for="usr">Frequenza: </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">Monofrequenza
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">Multifrequenza
+                                            </label>
+                                        </form>
+                                        <br>
+                                        <form>
+                                            <label for="usr">Sedute:  </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">3
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">4
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">5
+                                            </label>
+                                        </form>
+
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-primary">Ok</button>
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
@@ -143,10 +225,50 @@
                                     <div class="modal-body">
                                         <img src="weight.jpg" width="100%"/>
                                         <hr>                                    
-                                        <p>a breve...</p>                                  
+                                        <h3>Crea la tua scheda personalizzata</h3>
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="usr">Obiettivo: </label>
+                                                <input type="text" class="form-control" id="usr">
+                                            </div>
+
+                                            <label for="usr">Durata: </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="">4 settimane
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="">6 settimane
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="">8 settimane
+                                            </label>
+                                            <br>
+                                            <br>
+                                            <label for="usr">Frequenza: </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">Monofrequenza
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">Multifrequenza
+                                            </label>
+                                        </form>
+                                        <br>
+                                        <form>
+                                            <label for="usr">Sedute:  </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">3
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">4
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">5
+                                            </label>
+                                        </form>                                 
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-primary">Ok</button>
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
@@ -177,10 +299,50 @@
 
                                         <img src="leanfaiz.jpg" width="100%"alt=""/>
                                         <hr>                                    
-                                        <p>a breve...</p>                                  
+                                        <h3>Crea la tua scheda personalizzata</h3>
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="usr">Obiettivo: </label>
+                                                <input type="text" class="form-control" id="usr">
+                                            </div>
+
+                                            <label for="usr">Durata: </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="">4 settimane
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="">6 settimane
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="">8 settimane
+                                            </label>
+                                            <br>
+                                            <br>
+                                            <label for="usr">Frequenza: </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">Monofrequenza
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">Multifrequenza
+                                            </label>
+                                        </form>
+                                        <br>
+                                        <form>
+                                            <label for="usr">Sedute:  </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">3
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">4
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">5
+                                            </label>
+                                        </form>                                  
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-primary">Ok</button>
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>

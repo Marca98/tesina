@@ -178,3 +178,8 @@ well{
    src: url('C:\Users\Andrea\Desktop\TESINA_GYM\tesina') format('ttf');
 }
 
+.modal-body{
+    
+    bottom: 90px;
+    
+}
