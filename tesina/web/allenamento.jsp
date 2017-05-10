@@ -125,7 +125,12 @@
                                     </div>
                                 </div>
                             </div>                       
-                        </div><br>
+                        </div>
+                        <%
+                            String query = "INSERT INTO \"Allenamento\" (\"Obiettivo\",\" \",)";
+
+                        %>
+                        <br>
                     </div>
                 </div>
                 <hr>
