@@ -11,6 +11,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>     
     </head>
+    <link rel="icon" href="muscle.png">
     <body>
         <%  String Username = null;
             String Password = null;
@@ -36,11 +37,16 @@
 
                     if (rs.next()) {
                         UtenteEsiste = rs.getString("Username");
-                        session.setAttribute("Utente", rs.getString("Username"));
+                        //session.setAttribute("Utente", rs.getString("Codice_Fiscale"));
+                        request.getSession().setAttribute("Codice_Fiscale", "Utente");
+                        
                     } else {
+                        
                         response.sendRedirect("login.jsp");
                     }
-
+                    
+                    
+                    
                 } catch (SQLException e) {
                     session.setAttribute("errore", "Login fallito");
                 } finally {
