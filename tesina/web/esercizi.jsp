@@ -32,10 +32,10 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.jsp">Home</a></li>
                         <li><a href="allenamento.jsp">Allenamento</a></li>
                         <li><a href="cercaPalestre.jsp">Cerca palestre</a></li>
-                        <li class="active"><a href="contatti.jsp">Contatti</a></li>
+                        <li class="active"><a href="esercizi.jsp">Esercizi</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="registrazione.jsp"><span class="glyphicon glyphicon-user"></span> Registrati</a></li>
