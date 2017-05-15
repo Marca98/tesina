@@ -15,7 +15,7 @@
         <link href="js/jsGym.js">
 
     </head>
-    <link rel="icon" href="muscle.png">
+    <link rel="icon" href="media/muscle.png">
     <body>
 
         <nav class="navbar-default navbar-fixed-top " >
@@ -36,7 +36,7 @@
                         <li><a href="esercizi.jsp">Esercizi</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="account.jsp">Logged in <%= request.getParameter("usr")%></a></li>
+                        <li><a href="account.jsp">Logged in <%= session.getAttribute("Utente")%></a></li>
                         <li><a href="logout.jsp">Logout</a></li>                                                               
                     </ul>
                 </div>
@@ -46,7 +46,7 @@
 
         <div class="jumbotron text-center">
             <h1>Gestione account</h1><br>
-            <p>Benvenuto <%= request.getParameter("usr")%></p>
+            <p>Benvenuto <%= session.getAttribute("Utente")%></p>
             <br>
             <br>
             <br>
@@ -70,7 +70,7 @@
                     </thead>
                     <tbody>
                         <%
-                            String query = "Select * From \"Utente\" WHERE \"Codice_Fiscale\" = " + session.getAttribute("Utente") + "";
+                            String query = "Select * From \"Utente\" WHERE \"Codice_Fiscale\" = '" + session.getAttribute("CodiceFiscale") + "'";
                             Statement a = con.createStatement();
                             ResultSet rs = a.executeQuery(query);
 
@@ -86,7 +86,7 @@
                         </tr>
                         <%
 
-                                }%>
+                            }%>
 
                     </tbody>
                 </table>
