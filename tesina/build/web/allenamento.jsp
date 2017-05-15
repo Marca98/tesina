@@ -1,4 +1,4 @@
-<%@include file="connessione.jsp"%>
+<%@include file="include/connessione.jsp"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="cssTesina.css">
-        <link href="jsGym.js">
+        <link rel="stylesheet" href="css/cssTesina.css">
+        <link href="js/jsGym.js">
     </head>
-    <link rel="icon" href="muscle.png">
+    <link rel="icon" href="media/muscle.png">
     <body>
 
         <nav class="navbar-default navbar-fixed-top " >
@@ -53,7 +53,7 @@
             <div class="well">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 " >
-                        <img src="muscle_and_strength.jpg" width="100%" alt=""/>
+                        <img src="media/muscle_and_strength.jpg" width="100%" alt=""/>
                     </div>
                     <div class="col-md-6 col-sm-6 ">
                         <h2>MUSCOLI E FORZA</h2><br>
@@ -75,7 +75,7 @@
                                         <h4 class="modal-title" >MUSCOLI E FORZA</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="enorme.jpg" width="100%"/>
+                                        <img src="media/enorme.jpg" width="100%"/>
                                         <hr>
                                         <h3>Crea la tua scheda personalizzata</h3>
 
@@ -151,7 +151,7 @@
                                         <h4 class="modal-title" >ENERGIA E RESISTENZA</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="endurance.jpg"  width="100%" alt=""/>
+                                        <img src="media/endurance.jpg"  width="100%" alt=""/>
                                         <hr>
                                         <h3>Crea la tua scheda personalizzata</h3>
 
@@ -205,13 +205,13 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6" >
-                        <img src="energy.jpg" width="100%" alt=""/>
+                        <img src="media/energy.jpg" width="100%" alt=""/>
                     </div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-md-6 col-sm-6" >
-                        <img src="Yoga.jpg"  width="100%"alt=""/>
+                        <img src="media/Yoga.jpg"  width="100%"alt=""/>
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <h2>DIETA E PERDITA DI PESO</h2><br>
@@ -229,7 +229,7 @@
                                         <h4 class="modal-title" >DIETA E PERDITA DI PESO</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="weight.jpg" width="100%"/>
+                                        <img src="media/weight.jpg" width="100%"/>
                                         <hr>                                    
                                         <h3>Crea la tua scheda personalizzata</h3>
 
@@ -303,7 +303,7 @@
                                     </div>
                                     <div class="modal-body">
 
-                                        <img src="leanfaiz.jpg" width="100%"alt=""/>
+                                        <img src="media/leanfaiz.jpg" width="100%"alt=""/>
                                         <hr>                                    
                                         <h3>Crea la tua scheda personalizzata</h3>
 
@@ -356,7 +356,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6" >
-                        <img src="lean_muscle.jpg"  width="100%"alt=""/>
+                        <img src="media/lean_muscle.jpg"  width="100%"alt=""/>
                     </div>
                 </div>
                 <br><br>

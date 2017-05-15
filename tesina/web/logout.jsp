@@ -1,4 +1,4 @@
-<%@include file="connessione.jsp"%>
+<%@include file="include/connessione.jsp"%>
 
 <%
 session.invalidate();

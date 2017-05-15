@@ -1,15 +1,15 @@
 <!DOCTYPE html> 
 <html lang="en"> 
     <head> 
-        <!--%@include file="connessione.jsp"%-->
+        <!--%@include file="include/connessione.jsp"%-->
         <title>Gym Mate</title> 
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-        <link rel="stylesheet" href="cssTesina.css"> 
-        <link href="jsGym.js"> 
+        <link rel="stylesheet" href="css/cssTesina.css"> 
+        <link href="js/jsGym.js"> 
         <style> 
 
             /* Add a gray background color and some padding to the footer */ 
@@ -74,14 +74,14 @@
             <!-- Wrapper for slides --> 
             <div class="carousel-inner" role="listbox"> 
                 <div class="item active"> 
-                    <img src="Gym-HD-Wallpaper.jpg" alt="Image"> 
+                    <img src="media/Gym-HD-Wallpaper.jpg" alt="Image"> 
                     <div class="carousel-caption"> 
 
                     </div>       
                 </div> 
 
                 <div class="item"> 
-                    <img src="Gym-Wallpaper-.jpg" alt="Image"> 
+                    <img src="media/Gym-Wallpaper-.jpg" alt="Image"> 
                     <div class="carousel-caption"> 
 
                     </div>       
@@ -107,10 +107,10 @@
 
                 <br><h2>Siamo qui per aiutarti a crescere.</h2><br>
                 <div class="row">
-                    <div class="col-md-4"><BR><img src="burn.png"width="50%"/><br><br>BRUCIA GRASSI</div>
+                    <div class="col-md-4"><BR><img src="media/burn.png"width="50%"/><br><br>BRUCIA GRASSI</div>
 
-                    <div class="col-md-4"><br><img src="build.png" width="50%"/><br><br>COSTRUISCI SANO IL TUO CORPO</div>
-                    <div class="col-md-4"><br><img src="transform.png" width="50%"/><br><br>MANTIENI LA FORMA</div>
+                    <div class="col-md-4"><br><img src="media/build.png" width="50%"/><br><br>COSTRUISCI SANO IL TUO CORPO</div>
+                    <div class="col-md-4"><br><img src="media/transform.png" width="50%"/><br><br>MANTIENI LA FORMA</div>
 
                 </div>
                 <br><br><br><br><br><br><br><br>
@@ -135,7 +135,7 @@
 
                 <div class="row">
                     <div class="col-sm-2 text-center">
-                        <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                        <img src="media/bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
                     </div>
                     <div class="col-sm-10">
                         <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
@@ -143,7 +143,7 @@
                         <br>
                     </div>
                     <div class="col-sm-2 text-center">
-                        <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                        <img src="media/bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
                     </div>
                     <div class="col-sm-10">
                         <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>

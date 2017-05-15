@@ -1,4 +1,4 @@
-<%@include file="connessione.jsp"%>
+<%@include file="include/connessione.jsp"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
@@ -10,10 +10,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="cssTesina.css">
-        <link href="jsGym.js">
+        <link rel="stylesheet" href="css/cssTesina.css">
+        <link href="js/jsGym.js">
     </head>
-    <link rel="icon" href="muscle.png">
+    <link rel="icon" href="media/muscle.png">
     <body>
 
         <nav class="navbar-default navbar-fixed-top " >
@@ -113,6 +113,13 @@
                             <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                         </div>
                     </div>
+                    <% String rog = "Select * From \"Palestra\" WHERE \"Nome\" like '%" + request.getParameter("search") +  "%'";
+                        Statement b = con.createStatement();
+                        ResultSet re = b.executeQuery(rog);
+
+                        while (re.next()) {
+
+                    %>
 
                     <div class="container">
                         <div class="row">
@@ -129,34 +136,26 @@
                                             <th> Telefono </th>
                                             <th> Costo </th>
                                             <th> Orario </th>
-                                           
+
                                             <th> Indirizzo </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                     <table>                                       
-                                    <%  
-                                        String query = "Select * From \"Palestra\" ";
-                                        Statement b = con.createStatement();
-                                        ResultSet re = b.executeQuery(query);
 
-                                        while (re.next()) {
+                                        <tr>                                
+                                            <td> <%= re.getString("Nome")%> </td>
+                                            <td> <%= re.getString("Telefono")%> </td>
+                                            <td> <%= re.getString("Costo")%> € </td>
+                                            <td> <%= re.getString("Orario")%> </td>
 
+                                            <td> <%= re.getString("Indirizzo")%> </td> 
+                                        </tr>
+                                        <%
 
-                                    %>
-                                    <tr>                                
-                                        <td> <%= re.getString("Nome")%> </td>
-                                        <td> <%= re.getString("Telefono")%> </td>
-                                        <td> <%= re.getString("Costo")%> </td>
-                                        <td> <%= re.getString("Orario")%> </td>
-                                        
-                                        <td> <%= re.getString("Indirizzo")%> </td> 
-                                    </tr>
-                                    <%
-
-                                                                            }%>
-                                    </tbody>
-                                </table>  
+                                        }%>
+                                        </tbody>
+                                    </table>  
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,7 @@
 <%= request.getParameter("date")%>
 <%= request.getParameter("codf")%>
 
-<%@include file="connessione.jsp"%>
+<%@include file="include/connessione.jsp"%>
 
 <%        
        String query = "INSERT INTO \"Utente\" (\"Nome\", \"Cognome\", \"Username\", \"Password\", \"Email\", \"Data_Di_Nascita\", \"Codice_Fiscale\") "

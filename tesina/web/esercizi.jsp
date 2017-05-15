@@ -14,8 +14,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="cssTesina.css">
-        <link href="jsGym.js">
+        <link rel="stylesheet" href="css/cssTesina.css">
+        <link href="js/jsGym.js">
     </head>
     <link rel="icon" href="muscle.png">
     <body>
@@ -49,13 +49,14 @@
 
         <div class="container"><br><br>
 
-            <div class="well tex">Gym Mate
+            <div class="well">                
+                    
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
             </div>
         </div><br><br><br>
         <footer class="container-fluid text-center">
-            <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
+            <p>Creato e ideato da Andrea Marchesoni 5AIN © </p>
         </footer>
 
     </body>
