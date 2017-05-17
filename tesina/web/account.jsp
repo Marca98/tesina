@@ -134,7 +134,7 @@
                         <br>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="cancella_account.jsp">Si</button>
+                            <a href="cancella_account.jsp"<button type="button" class="btn btn-primary" >Si</button></a>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>                        
                         </div>
                     </div>
