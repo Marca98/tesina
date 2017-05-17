@@ -107,16 +107,35 @@ footer{
     .row.content {height:auto;} 
 }
 
+h4{
+    
+    font-family: 'Raleway', sans-serif;
+}
 
 h5{
     color: darkgray;
-    font-style: italic;    
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;    
 }
 
 h2{
     color: grey;
+    font-family: 'Raleway', sans-serif;
 }
 
+h1{
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    
+    font-family: 'Raleway', sans-serif;
+}
 well{
     height: 1000px;
 
@@ -173,13 +192,3 @@ well{
     font-size: 14px;
 }
 
-@font-face {
-   font-family: 'FTY DELIRIUM NCV.ttf';
-   src: url('C:\Users\Andrea\Desktop\TESINA_GYM\tesina') format('ttf');
-}
-
-/*.modal-body{
-    
-    bottom: 90px;
-    
-}*/

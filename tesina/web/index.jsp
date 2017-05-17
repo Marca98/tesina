@@ -15,7 +15,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
         <link rel="stylesheet" href="css/cssTesina.css"> 
-        <link href="js/jsGym.js"> 
+        <link href="js/jsGym.js">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <style> 
 
             /* Add a gray background color and some padding to the footer */ 
@@ -111,7 +112,7 @@
 
         <div class="container"><br> 
             <div class="well text-center"> 
-                <h1>Gym Mate</h1><br><br> 
+                <h1 class="display-1">Gym Mate</h1><br><br> 
                 <h2>Piani nutrizionali, schede, consigli del giorno e valutazione del tuo allenamento : Gym Mate ti aiuterà a raggiungere i tuoi obiettivi rapidamente e vivere una vita più sana</h2>
 
 
