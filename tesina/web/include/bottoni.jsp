@@ -1,0 +1,2 @@
+<li><a href="registrazione.jsp"><span class="glyphicon glyphicon-user"></span> Registrati</a></li> 
+<li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> Accedi</a>          </li>          

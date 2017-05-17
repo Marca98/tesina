@@ -1,11 +1,10 @@
-<%-- 
-    Document   : contatti
-    Created on : 20-mar-2017, 12.21.07
-    Author     : iti5a07
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%    Boolean logged = false;
+    if (session.getAttribute("CodiceFiscale") != null) {
+        logged = true;
+    }
+%>
 <html lang="en">
     <head>
         <title>Gym Mate</title>
@@ -38,9 +37,13 @@
                         <li class="active"><a href="esercizi.jsp">Esercizi</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="registrazione.jsp"><span class="glyphicon glyphicon-user"></span> Registrati</a></li>
-                        <li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> Accedi</a>                        
-                        </li>
+                        <%
+                            if (logged) {
+                        %>
+                        <%@include file="include/bottone_loggato.jsp"%>        
+                        <%} else { %>
+                        <%@include file="include/bottoni.jsp"%>
+                        <% }%>                        
                     </ul>
                 </div>
             </div>

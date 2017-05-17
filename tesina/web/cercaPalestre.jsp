@@ -2,6 +2,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
+<%    Boolean logged = false;
+    if (session.getAttribute("CodiceFiscale") != null) {
+        logged = true;
+    }
+%>
+
 <html lang="en">
     <head>
         <title>Gym Mate</title>
@@ -34,9 +40,13 @@
                         <li><a href="esercizi.jsp">Esercizi</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="registrazione.jsp"><span class="glyphicon glyphicon-user"></span> Registrati</a></li>
-                        <li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> Accedi</a>                        
-                        </li>
+                        <%
+                            if (logged) {
+                        %>
+                        <%@include file="include/bottone_loggato.jsp"%>        
+                        <%} else { %>
+                        <%@include file="include/bottoni.jsp"%>
+                        <% }%>                        
                     </ul>
                 </div>
             </div>
@@ -49,7 +59,6 @@
         </div>
 
         <div class="container"><br>
-
             <div class="well">                
                 <h2>Cerca la palestra più vicina a te</h2>
                 <br>
@@ -112,51 +121,49 @@
                             <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                         </div>
                     </div>
-                    <% String rog = "Select * From \"Palestra\" WHERE \"Nome\" like '%" + request.getParameter("search") +  "%'";
-                        Statement b = con.createStatement();
-                        ResultSet re = b.executeQuery(rog);
 
-                        while (re.next()) {
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">   
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th> Nome </th>
+                                        <th> Telefono </th>
+                                        <th> Costo </th>
+                                        <th> Orario </th>
+                                        <th> Indirizzo </th>
+                                    </tr>
+                                </thead>
+                                <tbody> 
+                                    <% String rog = "Select * From \"Palestra\" WHERE \"Nome\" like '%" + request.getParameter("search") + "%'";
+                                        Statement b = con.createStatement();
+                                        ResultSet re = b.executeQuery(rog);
 
-                    %>
-                    <div class="container">                       
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-3">   
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th> Nome </th>
-                                            <th> Telefono </th>
-                                            <th> Costo </th>
-                                            <th> Orario </th>
+                                        while (re.next()) {
 
-                                            <th> Indirizzo </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    <table>                                       
-                                        <tr>                                
-                                            <td> <%= re.getString("Nome")%> </td>
-                                            <td> <%= re.getString("Telefono")%> </td>
-                                            <td> <%= re.getString("Costo")%> € </td>
-                                            <td> <%= re.getString("Orario")%> </td>
+                                    %>
+                                    <tr>                                
+                                        <td> <%= re.getString("Nome")%> </td>
+                                        <td> <%= re.getString("Telefono")%> </td>
+                                        <td> <%= re.getString("Costo")%> € </td>
+                                        <td> <%= re.getString("Orario")%> </td>
 
-                                            <td> <%= re.getString("Indirizzo")%> </td> 
-                                        </tr>
-                                        <%
-
-                                        }%>
-                                        </tbody>
-                                    </table>  
-                            </div>
+                                        <td> <%= re.getString("Indirizzo")%> </td> 
+                                    </tr>
+                                    <%}%>
+                                </tbody> 
+                            </table>
                         </div>
+                        <div class="col-md-1"></div>
                     </div>
-                </form>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
-        </div><br><br>
-        <footer class="container-fluid text-center">
-            <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
-        </footer>
-    </body>
+        </form>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+</div><br><br>
+<footer class="container-fluid text-center">
+    <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
+</footer>
+</body>
 </html>

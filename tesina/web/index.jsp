@@ -1,4 +1,10 @@
-<!DOCTYPE html> 
+<%@include file="include/connessione.jsp"%>
+<!DOCTYPE html>
+<%    Boolean logged = false;
+    if (session.getAttribute("CodiceFiscale") != null) {
+        logged = true;
+    }
+%>
 <html lang="en"> 
     <head> 
         <!--%@include file="include/connessione.jsp"%-->
@@ -54,11 +60,15 @@
                         <li><a href="cercaPalestre.jsp">Cerca palestre</a></li> 
                         <li><a href="esercizi.jsp">Esercizi</a></li> 
                     </ul> 
-                    <ul class="nav navbar-nav navbar-right"> 
-                        <li><a href="registrazione.jsp"><span class="glyphicon glyphicon-user"></span> Registrati</a></li> 
-                        <li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> Accedi</a>                         
-                        </li> 
-                    </ul> 
+                    <ul class="nav navbar-nav navbar-right">
+                        <%
+                            if (logged) {
+                        %>
+                        <%@include file="include/bottone_loggato.jsp"%>        
+                        <%} else { %>
+                        <%@include file="include/bottoni.jsp"%>
+                        <% }%>                        
+                    </ul>
                 </div> 
             </div> 
             <div style="height: 1px; background-color:#34889d;"></div> 
@@ -150,24 +160,24 @@
                         <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <br>
                         <p><span class="badge">1</span> Comment:</p><br>
+                    </div>
+                </div>
+                <h3>Registrati per ottenere il meglio dal sito!</h3>
             </div>
-        </div>
-                 <h3>Registrati per ottenere il meglio dal sito!</h3>
-    </div>
 
 
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-   
-</div> 
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-</div> 
-<br>
-<br><br>
+        </div> 
 
-<footer class="container-fluid text-center"> 
-    <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
-    <hr>
-</footer> 
+    </div> 
+    <br>
+    <br><br>
+
+    <footer class="container-fluid text-center"> 
+        <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
+        <hr>
+    </footer> 
 </body> 
 </html> 
