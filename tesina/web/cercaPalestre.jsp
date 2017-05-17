@@ -104,7 +104,6 @@
                 <script async defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg1wXIFzFKqNoyFFqdQ7vZwMZAT201ioc&callback=initMap">
                 </script>
-
                 <br><br><br>
                 <form method="get" >
                     <div class="input-group">
@@ -120,13 +119,7 @@
                         while (re.next()) {
 
                     %>
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3">
-
-                            </div>
-                        </div>
+                    <div class="container">                       
                         <div class="row">
                             <div class="col-md-4 col-md-offset-3">   
                                 <table class="table table-hover">
@@ -142,7 +135,6 @@
                                     </thead>
                                     <tbody>
                                     <table>                                       
-
                                         <tr>                                
                                             <td> <%= re.getString("Nome")%> </td>
                                             <td> <%= re.getString("Telefono")%> </td>

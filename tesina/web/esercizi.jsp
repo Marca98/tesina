@@ -50,9 +50,7 @@
         <div class="container"><br><br>
 
             <div class="well">                
-                    
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+                <img src="media/seid.png" width="70%" position="center"/>                                  
             </div>
         </div><br><br><br>
         <footer class="container-fluid text-center">

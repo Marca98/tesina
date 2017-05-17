@@ -81,11 +81,11 @@
 
                                         <form>
                                             <div class="form-group">
-                                                <label for="usr">Obiettivo: </label>
+                                                <label for="obj">Obiettivo: </label>
                                                 <input type="text" class="form-control" id="usr">
                                             </div>
 
-                                            <label for="usr">Durata: </label>
+                                            <label for="dur">Durata: </label>
                                             <label class="checkbox-inline">
                                                 <input type="checkbox" value="">4 settimane
                                             </label>
@@ -97,7 +97,7 @@
                                             </label>
                                             <br>
                                             <br>
-                                            <label for="usr">Frequenza: </label>
+                                            <label for="freq">Frequenza: </label>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optradio">Monofrequenza
                                             </label>
@@ -107,7 +107,7 @@
                                         </form>
                                         <br>
                                         <form>
-                                            <label for="usr">Sedute:  </label>
+                                            <label for="sed">Sedute:  </label>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optradio">3
                                             </label>
@@ -157,11 +157,11 @@
 
                                         <form>
                                             <div class="form-group">
-                                                <label for="usr">Obiettivo: </label>
+                                                <label for="obj">Obiettivo: </label>
                                                 <input type="text" class="form-control" id="usr">
                                             </div>
 
-                                            <label for="usr">Durata: </label>
+                                            <label for="dur">Durata: </label>
                                             <label class="checkbox-inline">
                                                 <input type="checkbox" value="">4 settimane
                                             </label>
@@ -173,7 +173,7 @@
                                             </label>
                                             <br>
                                             <br>
-                                            <label for="usr">Frequenza: </label>
+                                            <label for="freq">Frequenza: </label>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optradio">Monofrequenza
                                             </label>
@@ -183,7 +183,7 @@
                                         </form>
                                         <br>
                                         <form>
-                                            <label for="usr">Sedute:  </label>
+                                            <label for="sed">Sedute:  </label>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optradio">3
                                             </label>
@@ -235,11 +235,11 @@
 
                                         <form>
                                             <div class="form-group">
-                                                <label for="usr">Obiettivo: </label>
+                                                <label for="obj">Obiettivo: </label>
                                                 <input type="text" class="form-control" id="usr">
                                             </div>
 
-                                            <label for="usr">Durata: </label>
+                                            <label for="dur">Durata: </label>
                                             <label class="checkbox-inline">
                                                 <input type="checkbox" value="">4 settimane
                                             </label>
@@ -251,7 +251,7 @@
                                             </label>
                                             <br>
                                             <br>
-                                            <label for="usr">Frequenza: </label>
+                                            <label for="freq">Frequenza: </label>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optradio">Monofrequenza
                                             </label>
@@ -261,7 +261,7 @@
                                         </form>
                                         <br>
                                         <form>
-                                            <label for="usr">Sedute:  </label>
+                                            <label for="sed">Sedute:  </label>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optradio">3
                                             </label>
@@ -309,11 +309,11 @@
 
                                         <form>
                                             <div class="form-group">
-                                                <label for="usr">Obiettivo: </label>
+                                                <label for="obj">Obiettivo: </label>
                                                 <input type="text" class="form-control" id="usr">
                                             </div>
 
-                                            <label for="usr">Durata: </label>
+                                            <label for="dur">Durata: </label>
                                             <label class="checkbox-inline">
                                                 <input type="checkbox" value="">4 settimane
                                             </label>
@@ -325,7 +325,7 @@
                                             </label>
                                             <br>
                                             <br>
-                                            <label for="usr">Frequenza: </label>
+                                            <label for="freq">Frequenza: </label>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optradio">Monofrequenza
                                             </label>
@@ -335,7 +335,7 @@
                                         </form>
                                         <br>
                                         <form>
-                                            <label for="usr">Sedute:  </label>
+                                            <label for="sed">Sedute:  </label>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optradio">3
                                             </label>

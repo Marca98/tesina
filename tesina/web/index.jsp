@@ -152,12 +152,13 @@
                         <p><span class="badge">1</span> Comment:</p><br>
             </div>
         </div>
+                 <h3>Registrati per ottenere il meglio dal sito!</h3>
     </div>
 
 
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <h3>Registrati per ottenere il meglio dal sito!</h3>
+   
 </div> 
 
 </div> 
