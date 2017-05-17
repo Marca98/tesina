@@ -127,14 +127,14 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <br><br>
-                            <p>Sei sicuro di voler eliminare il tuo account?</p>
-                            <%
-                                String eliminate = "DELETE FROM \"Utente\" WHERE \"Codice_Fiscale\" = ";
-                            %>
+                            <br>
+                            <hr>
+                            <br>
+                            <h4 style="text-align: center ">Sei sicuro di voler eliminare il tuo account?</h4>                
+                        <br>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Si</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="cancella_account.jsp">Si</button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>                        
                         </div>
                     </div>
