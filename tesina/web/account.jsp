@@ -66,6 +66,12 @@
                                     <th>Codice Fiscale</th>                    
                                 </tr>
                             </thead>
+                            <script>
+                                $(document).ready(function () {
+                                    $('[data-toggle="tooltip"]').tooltip();
+                                });
+                            </script>
+
                             <tbody>
                                 <%
                                     String query = "Select * From \"Utente\" WHERE \"Codice_Fiscale\" = '" + session.getAttribute("CodiceFiscale") + "'";
@@ -76,11 +82,16 @@
 
                                 %>
                                 <tr>  
-                                    <td><%= rs.getString("Nome")%></td>
-                                    <td><%= rs.getString("Cognome")%></td>
-                                    <td><%= rs.getString("Username")%></td>
-                                    <td><%= rs.getString("Password")%></td>
-                                    <td><%= rs.getString("Codice_Fiscale")%></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Nome")%></a></td>
+                                        <% String qq = "ALTER TABLE \"Utente\" ALTER \"Nome\" TO Nome";%>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Cognome")%></a></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Username")%></a></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Password")%></a></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Codice_Fiscale")%></a></td>
                                 </tr>
                                 <%
 
@@ -109,8 +120,29 @@
                     </div>
                     <div class="col-md-1"></div>
                 </div>
+                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                Elimina Account
+            </button>
+            <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <br><br>
+                            <p>Sei sicuro di voler eliminare il tuo account?</p>
+                            <%
+                                String eliminate = "DELETE FROM \"Utente\" WHERE \"Codice_Fiscale\" = ";
+                            %>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Si</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>                        
+                        </div>
+                    </div>
+                </div>
             </div>
+            </div>           
         </div>
+
         <footer class="container-fluid text-center background-white">
             <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
         </footer>

@@ -84,28 +84,31 @@
                                         <h4 class="modal-title" >MUSCOLI E FORZA</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="media/enorme.jpg" width="100%"/>
+                                      <img src="media/enorme.jpg" width="100%"/>
                                         <hr>
                                         <h3>Crea la tua scheda personalizzata</h3>
-
                                         <form>
                                             <div class="form-group">
                                                 <label for="obj">Obiettivo: </label>
                                                 <input type="text" class="form-control" id="usr">
                                             </div>
-
-                                            <label for="dur">Durata: </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" value="">4 settimane
+                                        </form>
+                                        <br>
+                                        <form>
+                                            <label for="dur">Durata:  </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">4 settimane
                                             </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" value="">6 settimane
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">6 settimane
                                             </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" value="">8 settimane
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">8 settimane
                                             </label>
-                                            <br>
-                                            <br>
+                                        </form>
+                                        <br>
+                                        <br>
+                                        <form>
                                             <label for="freq">Frequenza: </label>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optradio">Monofrequenza
@@ -135,20 +138,14 @@
                                 </div>
                             </div>                       
                         </div>
-                        <%
-                            String query = "INSERT INTO \"Allenamento\" (\"Obiettivo\",\" \",)";
-
-                        %>
                         <br>
                     </div>
                 </div>
                 <hr>
-
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <h2>ENERGIA E RESISTENZA</h2><br>
                         <h3>La nostra gamma per Energia & Resistenza comprende una varia selezione di prodotti altamente energetici ideati per coloro che affrontano esercizi ad alta intensita’e sport di resistenza.</h3><br>
-
                         Oltre ai nostri famosi prodotti ENER:GEL, offriamo integratori adatti alle varie fasi dell’allenamento: prima (PRE:PARE), durante (PRO:LONG) e dopo (RE:CHARGE). Ciclisti, corridori, maratoneti o atleti triathlon non potranno chiedere di più.<br>
                         <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#energy">Scegli piano</button>
                         <!-- Modal -->
@@ -169,19 +166,23 @@
                                                 <label for="obj">Obiettivo: </label>
                                                 <input type="text" class="form-control" id="usr">
                                             </div>
-
-                                            <label for="dur">Durata: </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" value="">4 settimane
+                                        </form>
+                                        <br>
+                                        <form>
+                                            <label for="dur">Durata:  </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">4 settimane
                                             </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" value="">6 settimane
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">6 settimane
                                             </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" value="">8 settimane
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">8 settimane
                                             </label>
-                                            <br>
-                                            <br>
+                                        </form>
+                                        <br>
+                                        <br>
+                                        <form>
                                             <label for="freq">Frequenza: </label>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optradio">Monofrequenza
@@ -247,19 +248,22 @@
                                                 <label for="obj">Obiettivo: </label>
                                                 <input type="text" class="form-control" id="usr">
                                             </div>
-
-                                            <label for="dur">Durata: </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" value="">4 settimane
+                                        </form>
+                                        <form>
+                                            <label for="dur">Durata:  </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">4 settimane
                                             </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" value="">6 settimane
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">6 settimane
                                             </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" value="">8 settimane
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">8 settimane
                                             </label>
-                                            <br>
-                                            <br>
+                                        </form>   
+                                        <br>
+                                        <br>
+                                        <form>
                                             <label for="freq">Frequenza: </label>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optradio">Monofrequenza
