@@ -18,6 +18,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/cssTesina.css">
         <link href="js/jsGym.js">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     </head>
     <link rel="icon" href="media/muscle.png">
     <body>

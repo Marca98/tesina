@@ -138,6 +138,8 @@ p{
 }
 well{
     height: 1000px;
+ 
+   
 
 }
 
@@ -192,3 +194,7 @@ well{
     font-size: 14px;
 }
 
+.container{
+    
+    width: 80%;
+}

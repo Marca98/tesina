@@ -54,7 +54,9 @@
 
             <div class="well">                
                <!-- <img src="media/seid.png" width="70%" position="center"/>  -->
-               <img src="media/calum.png" width="70%"/>
+               
+               <img src="media/74df2c9c74281cb2755f7996fa7d0ad0.jpg" width="27%" class="center-block" 
+                   />
             </div>
         </div><br><br><br>
         <footer class="container-fluid text-center">
