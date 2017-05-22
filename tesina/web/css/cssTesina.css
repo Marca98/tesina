@@ -136,6 +136,21 @@ p{
     
     font-family: 'Raleway', sans-serif;
 }
+
+a{
+    
+    font-family: 'Raleway', sans-serif;
+}
+
+li{
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.extrabold {font-weight:800;font-family: 'Raleway', sans-serif;}
+
+.bold, strong  {font-weight:600;font-family: 'Raleway', sans-serif;}
+
 well{
     height: 1000px;
  

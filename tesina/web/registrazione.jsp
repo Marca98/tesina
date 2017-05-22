@@ -5,6 +5,7 @@
 --%>
 <%@include file="include/connessione.jsp"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <!DOCTYPE html>
 <html>
     <head>

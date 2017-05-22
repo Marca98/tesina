@@ -17,6 +17,7 @@
         <link rel="stylesheet" href= "css/cssTesina.css"> 
         <link href="js/jsGym.js">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
         <style> 
 
             /* Add a gray background color and some padding to the footer */ 
@@ -52,7 +53,7 @@
                         <span class="icon-bar"></span> 
                         <span class="icon-bar"></span>                         
                     </button> 
-                    <a class="navbar-brand" href="index.jsp">Gym mate</a> 
+                    <a class="bold navbar-brand" href="index.jsp">Gym mate</a> 
                 </div> 
                 <div class="collapse navbar-collapse" id="myNavbar"> 
                     <ul class="nav navbar-nav"> 
@@ -122,27 +123,21 @@
 
                     <div class="col-md-4"><br><img src="media/build.png" width="50%"/><br><br>COSTRUISCI SANO IL TUO CORPO</div>
                     <div class="col-md-4"><br><img src="media/transform.png" width="50%"/><br><br>MANTIENI LA FORMA</div>
-
                 </div>
-                    <h3>Registrati per ottenere il meglio dal sito!</h3>
+                <br>
+                <h3>Registrati per ottenere il meglio dal sito!</h3>
                 <br><br><br><br><br><br><br><br>                
-                </div>
-                
-            </div>
-
-
-
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        </div> 
-
+            </div>                
+        </div>
+       
     </div> 
-    <br>
-    <br><br>
+</div> 
+<br>
+<br><br>
 
-    <footer class="container-fluid text-center"> 
-        <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
-        <hr>
-    </footer> 
+<footer class="container-fluid text-center"> 
+    <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
+    <hr>
+</footer> 
 </body> 
 </html> 

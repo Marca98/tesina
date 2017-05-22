@@ -13,6 +13,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/cssTesina.css">
         <link href="js/jsGym.js">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
 
     </head>
     <link rel="icon" href="media/muscle.png">
@@ -28,7 +30,7 @@
                     <a class="navbar-brand" href="index.jsp">Gym mate</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
+                    <ul class="bold nav navbar-nav">
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="allenamento.jsp">Allenamento</a></li>
                         <li><a href="cercaPalestre.jsp">Cerca palestre</a></li>
@@ -120,27 +122,29 @@
                     </div>
                     <div class="col-md-1"></div>
                 </div>
-                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
-                Elimina Account
-            </button>
-            <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <br>
-                            <hr>
-                            <br>
-                            <h4 style="text-align: center ">Sei sicuro di voler eliminare il tuo account?</h4>                
-                        <br>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="cancella_account.jsp"<button type="button" class="btn btn-primary" >Si</button></a>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>                        
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" class="center-block" >
+                    Elimina Account
+                </button>
+                <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <br>
+                                <hr>
+                                <br>
+                                <h4 style="text-align: center ">Sei sicuro di voler eliminare il tuo account?</h4>                
+                                <br>
+                            </div>
+                            <div class="modal-footer">
+                                
+                                <a href="cancella_account.jsp"<button type="button" class="btn btn-primary" >Si</button></a>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>                        
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>           
+            <br><br><br>
         </div>
 
         <footer class="container-fluid text-center background-white">
