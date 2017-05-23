@@ -53,7 +53,8 @@
         <div class="container"><br><br>
             <div class="well">                
                 <!-- <img src="media/seid.png" width="70%" position="center"/>  -->
-                <img src="media/74df2c9c74281cb2755f7996fa7d0ad0.jpg" width="27%" class="center-block"/>
+               <!--<img src="media/74df2c9c74281cb2755f7996fa7d0ad0.jpg" width="27%" class="center-block"/>-->
+               <img src="media/said.png"  width="50%" class="center-block"/>
             </div>
         </div><br><br><br>
         <footer class="container-fluid text-center">
