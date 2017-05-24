@@ -1,7 +1,7 @@
 <%@include file="include/connessione.jsp"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+
 <!DOCTYPE html>
 <%    Boolean logged = false;
     if (session.getAttribute("CodiceFiscale") != null) {
@@ -86,7 +86,7 @@
                                         <h4 class="modal-title" >MUSCOLI E FORZA</h4>
                                     </div>
                                     <div class="modal-body">
-                                      <img src="media/enorme.jpg" width="100%"/>
+                                        <img src="media/enorme.jpg" width="100%"/>
                                         <hr>
                                         <h3>Crea la tua scheda personalizzata</h3>
                                         <form>
@@ -94,49 +94,60 @@
                                                 <label for="obj">Obiettivo: </label>
                                                 <input type="text" class="form-control" id="usr">
                                             </div>
-                                        </form>
+                                        
                                         <br>
-                                        <form>
+                                        
                                             <label for="dur">Durata:  </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">4 settimane
+                                                <input type="radio" name="dur">4 settimane
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">6 settimane
+                                                <input type="radio" name="dur">6 settimane
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">8 settimane
+                                                <input type="radio" name="dur">8 settimane
                                             </label>
-                                        </form>
+                                        
                                         <br>
                                         <br>
-                                        <form>
+                                        
                                             <label for="freq">Frequenza: </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">Monofrequenza
+                                                <input type="radio" name="freq">Monofrequenza
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">Multifrequenza
+                                                <input type="radio" name="freq">Multifrequenza
                                             </label>
-                                        </form>
+                                        
                                         <br>
-                                        <form>
+                                        
                                             <label for="sed">Sedute:  </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">3
+                                                <input type="radio" name="sed">3
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">4
+                                                <input type="radio" name="sed">4
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">5
+                                                <input type="radio" name="sed">5
                                             </label>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary">Ok</button>
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary" onclick="myFunction()" >Ok</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                        
+                                        <div id="snackbar">Allenamento aggiunto alla lista</div>
+                                        <script>
+                                            function myFunction() {
+                                                var x = document.getElementById("snackbar")
+                                                x.className = "show";
+                                                setTimeout(function () {
+                                                    x.className = x.className.replace("show", "");
+                                                }, 3000);
+                                            }
+                                        </script>
                                     </div>
+
                                 </div>
                             </div>                       
                         </div>
@@ -173,13 +184,13 @@
                                         <form>
                                             <label for="dur">Durata:  </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">4 settimane
+                                                <input type="radio" name="dur">4 settimane
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">6 settimane
+                                                <input type="radio" name="dur">6 settimane
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">8 settimane
+                                                <input type="radio" name="dur">8 settimane
                                             </label>
                                         </form>
                                         <br>
@@ -187,23 +198,23 @@
                                         <form>
                                             <label for="freq">Frequenza: </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">Monofrequenza
+                                                <input type="radio" name="freq">Monofrequenza
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">Multifrequenza
+                                                <input type="radio" name="freq">Multifrequenza
                                             </label>
                                         </form>
                                         <br>
                                         <form>
                                             <label for="sed">Sedute:  </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">3
+                                                <input type="radio" name="sed">3
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">4
+                                                <input type="radio" name="sed">4
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">5
+                                                <input type="radio" name="sed">5
                                             </label>
                                         </form>
 
@@ -254,13 +265,13 @@
                                         <form>
                                             <label for="dur">Durata:  </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">4 settimane
+                                                <input type="radio" name="dur">4 settimane
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">6 settimane
+                                                <input type="radio" name="dur">6 settimane
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">8 settimane
+                                                <input type="radio" name="dur">8 settimane
                                             </label>
                                         </form>   
                                         <br>
@@ -268,23 +279,23 @@
                                         <form>
                                             <label for="freq">Frequenza: </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">Monofrequenza
+                                                <input type="radio" name="freq">Monofrequenza
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">Multifrequenza
+                                                <input type="radio" name="freq">Multifrequenza
                                             </label>
                                         </form>
                                         <br>
                                         <form>
                                             <label for="sed">Sedute:  </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">3
+                                                <input type="radio" name="sed">3
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">4
+                                                <input type="radio" name="sed">4
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">5
+                                                <input type="radio" name="sed">5
                                             </label>
                                         </form>                                 
                                     </div>
@@ -330,36 +341,38 @@
 
                                             <label for="dur">Durata: </label>
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" value="">4 settimane
+                                                <input type="checkbox" value="dur">4 settimane
                                             </label>
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" value="">6 settimane
+                                                <input type="checkbox" value="dur">6 settimane
                                             </label>
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" value="">8 settimane
+                                                <input type="checkbox" value="dur">8 settimane
                                             </label>
                                             <br>
                                             <br>
                                             <label for="freq">Frequenza: </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">Monofrequenza
+                                                <input type="radio" name="freq">Monofrequenza
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">Multifrequenza
+                                                <input type="radio" name="freq">Multifrequenza
                                             </label>
                                         </form>
                                         <br>
                                         <form>
                                             <label for="sed">Sedute:  </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">3
+                                                <input type="radio" name="sed">3
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">4
+                                                <input type="radio" name="sed">4
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="optradio">5
+                                                <input type="radio" name="sed">5
                                             </label>
+                                            <br>
+                                            <label for="sch">N° scheda</label>
                                         </form>                                  
                                     </div>
                                     <div class="modal-footer">

@@ -61,7 +61,7 @@
 
         <div class="container"><br>
             <div class="well">                
-                <h2>Cerca la palestra più vicina a te</h2>
+                <h2 class="bold">Cerca la palestra più vicina a te</h2>
                 <br>
                 <style>
                     /* Always set the map height explicitly to define the size of the div

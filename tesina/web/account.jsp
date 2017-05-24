@@ -27,10 +27,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="index.jsp">Gym mate</a>
+                    <a class="bold navbar-brand" href="index.jsp">Gym mate</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="bold nav navbar-nav">
+                    <ul class=" nav navbar-nav">
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="allenamento.jsp">Allenamento</a></li>
                         <li><a href="cercaPalestre.jsp">Cerca palestre</a></li>
@@ -53,7 +53,7 @@
         </div>
         <div class="container"><br>
             <div class="well">
-                <h2>Account Utente</h2><br><br>
+                <h2 class="bold">Account Utente</h2><br><br>
                 <h3>Gestione</h3><br>
                 <div class="row">
                     <div class="col-md-1"></div>
@@ -122,6 +122,27 @@
                     </div>
                     <div class="col-md-1"></div>
                 </div>
+                <br><br>
+                <h3>Palestre utente</h3><br>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">   
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Nome</th>
+                                    <th>Indirizzo</th>
+                                    <th>Inizio abbonamento</th>
+                                    <th>Fine abbonamento</th>
+                                    <th>Costo</th>                                
+                                </tr>
+                            </thead>
+                        </table>                        
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <br><br>
                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" class="center-block" >
                     Elimina Account
                 </button>
@@ -135,7 +156,7 @@
                                 <h4 style="text-align: center ">Sei sicuro di voler eliminare il tuo account?</h4>                
                                 <br>
                             </div>
-                            <div class="modal-footer">
+                            <div class="modal-footer"  align="right">
                                 
                                 <a href="cancella_account.jsp"<button type="button" class="btn btn-primary" >Si</button></a>
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>                        

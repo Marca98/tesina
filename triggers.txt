@@ -1,0 +1,7 @@
+set term ^;
+create trigger "TRGAllenamento" for "Allenamento"
+active before insert as 
+begin
+    new."Id_Allenamento" = Gen_id("GAllenamento",1);
+    end^
+set term ;^

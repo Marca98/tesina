@@ -53,8 +53,14 @@
         <div class="container"><br><br>
             <div class="well">                
                 <!-- <img src="media/seid.png" width="70%" position="center"/>  -->
-               <!--<img src="media/74df2c9c74281cb2755f7996fa7d0ad0.jpg" width="27%" class="center-block"/>-->
-               <img src="media/said.png"  width="50%" class="center-block"/>
+                <!--<img src="media/74df2c9c74281cb2755f7996fa7d0ad0.jpg" width="27%" class="center-block"/>-->
+                <img src="media/said.png"  width="70%" class="center-block" usemmap="#saidmap"/>
+
+                <map name="saidmap">
+                    <!--<area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+                    <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+                    <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">-->
+                </map>
             </div>
         </div><br><br><br>
         <footer class="container-fluid text-center">
