@@ -7,7 +7,6 @@
 %>
 <html lang="en"> 
     <head> 
-        <!--%@include file="include/connessione.jsp"%-->
         <title>Gym Mate</title> 
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1"> 

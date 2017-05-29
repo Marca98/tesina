@@ -2,7 +2,6 @@
 
 <%    if (session.getAttribute("CodiceFiscale") == null) {
         response.sendRedirect("login.jsp");
-
     }
 
     String durata = request.getParameter("dur");
@@ -18,14 +17,14 @@
     
     stat.executeUpdate(allenamento);
 
-    String scheda = "INSERT INTO \"Allenamento\" (\"Frequenza\", \"Sedute\",)"
+    String scheda = "INSERT INTO \"Scheda\" (\"FREQUENZA\", \"SEDUTE\")"
             + "VALUES(\'" + request.getParameter("freq") + "\', "
             + "\'" + request.getParameter("sed") + "\')";
 
     stat.executeUpdate(scheda);
 
     String prevede = "INSERT INTO \"Prevede\" (\"Id_Scheda\", \"Id_Allenamento\")"
-            + "VALUES((Select max(\"Id_Allenamento\") from \"Allenamento\"),"
+            + "VALUES( (Select max(\"Id_Scheda\") from \"Scheda\") ,"
             + "(Select max(\"Id_Allenamento\") from \"Allenamento\"))";
 
     stat.executeUpdate(prevede);

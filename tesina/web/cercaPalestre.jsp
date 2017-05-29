@@ -150,7 +150,10 @@
                                         <td> <%= re.getString("Costo")%> € </td>
                                         <td> <%= re.getString("Orario")%> </td>
 
-                                        <td> <%= re.getString("Indirizzo")%> </td> 
+                                        <td> <%= re.getString("Indirizzo")%> </td>
+                                        
+                                        <td><button type="button" class="btn btn-secondary, glyphicon glyphicon-heart-empty"></button></td>
+                                        <% String sch = "Insert into " ; %>
                                     </tr>
                                     <%}%>
                                 </tbody> 

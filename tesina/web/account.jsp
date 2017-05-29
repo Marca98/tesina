@@ -113,11 +113,41 @@
                                 <tr>
                                     <th>Obiettivo</th>
                                     <th>N°</th>
-                                    <th>Data inizio</th>
-                                    <th>Data fine</th>
-                                    <th>Scheda N°</th>                                
+                                    <th>Durata</th>                                  
+                                    <th>Scheda N°</th>
+                                    <th>Frequenza</th>
+                                    <th>Sedute</th>  
+                                    
                                 </tr>
                             </thead>
+                            <tbody>
+                                <%
+                                    String querty = "Select * From \"Allenamento\" WHERE \"Id_Allenamento\" = '" + session.getAttribute("Id_Allenamento") + "'";
+                                    Statement x = con.createStatement();
+                                    ResultSet xc = x.executeQuery(querty);
+
+                                    while (rs.next()) {
+
+                                %>
+                                <tr>  
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("obj")%></a></td>
+                                        <% String qe = "ALTER TABLE \"Utente\" ALTER \"Nome\" TO Nome";%>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Id_Allenamento")%></a></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Durata")%></a></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Id_Scheda")%></a></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Frequenza")%></a></td>
+                                    
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Sedute")%></a></td>                                    
+                                    
+                                </tr>
+                                <%
+
+                                    }%>
+                            </tbody>
                         </table>                        
                     </div>
                     <div class="col-md-1"></div>

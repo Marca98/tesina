@@ -100,13 +100,13 @@
 
                                             <label for="dur">Durata:  </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="dur" value="4 settimane">4 settimane
+                                                <input type="radio" name="dur" value="4">4 settimane
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="dur" value="6 settimane">6 settimane
+                                                <input type="radio" name="dur" value="6">6 settimane
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="dur" value="8 settimane">8 settimane
+                                                <input type="radio" name="dur" value="8">8 settimane
                                             </label>
 
                                             <br>
