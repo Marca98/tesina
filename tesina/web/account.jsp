@@ -122,7 +122,7 @@
                             </thead>
                             <tbody>
                                 <%
-                                    String querty = "Select * From \"Allenamento\" WHERE \"Id_Allenamento\" = '" + session.getAttribute("Id_Allenamento") + "'";
+                                    String querty = "Select * From \"Allenamento\" ";
                                     Statement x = con.createStatement();
                                     ResultSet xc = x.executeQuery(querty);
 
