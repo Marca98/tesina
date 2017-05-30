@@ -82,24 +82,25 @@
 
                                     while (rs.next()) {
 
-                                %>
-                                <tr>  
+                                %>                           
+                                <tr>
 
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Nome")%></a></td>
-                                        <% String qq = "ALTER TABLE \"Utente\" ALTER \"Nome\" TO Nome";%>
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Cognome")%></a></td>
+                                    <td><form method="post" action="modifica_campi.jsp"  name="edit" value="nome"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Nome")%></a></form></td>  
 
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Username")%></a></td>
+                                    <td><form method="post" action="modifica_campi.jsp" name="edit" value="2"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Cognome")%></a></form></td>
 
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Password")%></a></td>
+                                    <td><form method="post" action="modifica_campi.jsp" name="edit" value="3"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Username")%></a></form></td>
 
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Codice_Fiscale")%></a></td>
-                                </tr>
+                                    <td><form method="post" action="modifica_campi.jsp" name="edit" value="4"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Password")%></a></form></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom"><%= rs.getString("Codice_Fiscale")%></a></td>
+                                </tr>                            
                                 <%
 
                                     }%>
                             </tbody>
                         </table>
+
                     </div>
                     <div class="col-md-1"></div>
                 </div>                  
@@ -117,22 +118,22 @@
                                     <th>Scheda N°</th>
                                     <th>Frequenza</th>
                                     <th>Sedute</th>  
-                                    
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <%
-                                    String querty = "Select * From \"Allenamento\" ";
+                                    String querty = "Select A.\"Obiettivo\", A.\"Id_Allenamento\", A.\"Durata\", S.\"Id_Scheda\", S.\"Frequenza\", S.\"Sedute\"  From \"Allenamento\" A, \"Scheda\" S, \"Prevede\" P  Where A.\"Id_Allenamento\" = P.\"Id_Prevede\" and P.\"Id_Prevede\" = S.\"Id_Scheda\"";
                                     Statement x = con.createStatement();
                                     ResultSet xc = x.executeQuery(querty);
 
-                                    while (rs.next()) {
+                                    while (xc.next()) {
 
                                 %>
                                 <tr>  
 
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("obj")%></a></td>
-                                        <% String qe = "ALTER TABLE \"Utente\" ALTER \"Nome\" TO Nome";%>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Obiettivo")%></a></td>
+
                                     <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Id_Allenamento")%></a></td>
 
                                     <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Durata")%></a></td>
@@ -140,9 +141,9 @@
                                     <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Id_Scheda")%></a></td>
 
                                     <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Frequenza")%></a></td>
-                                    
+
                                     <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Sedute")%></a></td>                                    
-                                    
+
                                 </tr>
                                 <%
 
@@ -168,12 +169,45 @@
                                     <th>Costo</th>                                
                                 </tr>
                             </thead>
+                            <tbody>
+                                <%
+                                    String pale = "Select *  From \"Utente\" U, \"Palestra\" P, \"Cerca\" C Where U.\'" + session.getAttribute("CodiceFiscale") + "\' = C.\"Id_Cerca\" and C.\"Id_Cerca\" = P.\"Id_palestra\"";
+                                    Statement xx = con.createStatement();
+                                    ResultSet xd = x.executeQuery(pale);
+
+                                    while (xd.next()) {
+
+                                %>
+                                <tr>  
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Id_Palestra")%></a></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Nome")%></a></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Indirizzo")%></a></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Email")%></a></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Orario")%></a></td>
+
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Voto")%></a></td>
+                                    
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Telefono")%></a></td> 
+                                    
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Costo")%></a></td>
+                                    
+
+                                </tr>
+                                <%
+
+                                    }%>
+                            </tbody>
                         </table>                        
                     </div>
                     <div class="col-md-1"></div>
                 </div>
                 <br><br>
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" class="center-block" >
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" class="center-block" align="center" >
                     Elimina Account
                 </button>
                 <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -187,7 +221,7 @@
                                 <br>
                             </div>
                             <div class="modal-footer"  align="right">
-                                
+
                                 <a href="cancella_account.jsp"<button type="button" class="btn btn-primary" >Si</button></a>
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>                        
                             </div>

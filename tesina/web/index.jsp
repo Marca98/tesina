@@ -115,6 +115,7 @@
                 <h1 class="display-1">Gym Mate</h1><br><br> 
                 <h2>Piani nutrizionali, schede, consigli del giorno e valutazione del tuo allenamento : Gym Mate ti aiuterà a raggiungere i tuoi obiettivi rapidamente e vivere una vita più sana</h2>
 
+                
 
                 <br><h2>Siamo qui per aiutarti a crescere.</h2><br>
                 <div class="row">
@@ -128,7 +129,7 @@
                 <br><br><br><br><br><br><br><br>                
             </div>                
         </div>
-       
+
     </div> 
 </div> 
 <br>

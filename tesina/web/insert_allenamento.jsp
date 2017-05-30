@@ -17,7 +17,7 @@
     
     stat.executeUpdate(allenamento);
 
-    String scheda = "INSERT INTO \"Scheda\" (\"FREQUENZA\", \"SEDUTE\")"
+    String scheda = "INSERT INTO \"Scheda\" (\"Frequenza\", \"Sedute\")"
             + "VALUES(\'" + request.getParameter("freq") + "\', "
             + "\'" + request.getParameter("sed") + "\')";
 
