@@ -170,37 +170,37 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <%
+                                <%/*
                                     String pale = "Select *  From \"Utente\" U, \"Palestra\" P, \"Cerca\" C Where U.\'" + session.getAttribute("CodiceFiscale") + "\' = C.\"Id_Cerca\" and C.\"Id_Cerca\" = P.\"Id_palestra\"";
                                     Statement xx = con.createStatement();
                                     ResultSet xd = x.executeQuery(pale);
 
-                                    while (xd.next()) {
+                                    while (xd.next()) {*/
 
                                 %>
                                 <tr>  
 
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Id_Palestra")%></a></td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Id_Palestra")*/%></a></td>
 
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Nome")%></a></td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Nome")*/%></a></td>
 
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Indirizzo")%></a></td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Indirizzo") */%></a></td>
 
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Email")%></a></td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><% /*=xd.getString("Email")*/%></a></td>
 
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Orario")%></a></td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Orario")*/%></a></td>
 
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Voto")%></a></td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Voto")*/%></a></td>
                                     
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Telefono")%></a></td> 
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Telefono")*/%></a></td> 
                                     
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xd.getString("Costo")%></a></td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Costo")*/%></a></td>
                                     
 
                                 </tr>
-                                <%
-
-                                    }%>
+                                <%/*
+}
+                                    */%>
                             </tbody>
                         </table>                        
                     </div>
