@@ -110,26 +110,28 @@
             </a> 
         </div> 
 
-        <div class="container"><br> 
+        <div class="container" ><br> 
             <div class="well text-center"> 
                 <h1 class="display-1">Gym Mate</h1><br><br> 
                 <!--<h2>Piani nutrizionali, schede, consigli del giorno e valutazione del tuo allenamento : Gym Mate ti aiuterà a raggiungere i tuoi obiettivi rapidamente e vivere una vita più sana</h2>-->                
                 <br><h3>Raggiungi i tuoi obiettivi</h3><br>
-                <img src="media/attempt_2-052205.jpg" width="90%"/><br>
-                
-                <br><a href="login.jsp"><button type="button" class="btn btn-info btn-lg"  class="center-block" align="center" >JOIN THE CREW</button></a>                 
 
-                <div class="row">
+                
+                    <img src="media/attempt_2-052205.jpg" width="90%"/><br>                 
+                    <br><a href="login.jsp"><button type="button" class="btn btn-info btn-lg" style="margin-top: -150px !important" class="center-block" align="center" >JOIN THE CREW</button></a>                 
+               
+
+                <div class="row" >
                     <div class="col-md-4"><BR><img src="media/burn.png"width="50%"/><br><br>BRUCIA GRASSI</div>
                     <div class="col-md-4"><br><img src="media/build.png" width="50%"/><br><br>COSTRUISCI SANO IL TUO CORPO</div>
                     <div class="col-md-4"><br><img src="media/transform.png" width="50%"/><br><br>MANTIENI LA FORMA</div>
                     <br><a href="allenamento.jsp"><button type="button" class="btn btn-info btn-lg"  class="center-block" align="center" >CREA L'ALLENAMENTO</button></a>
                 </div>
                 <br>
-               
+
                 <img src="media/your_sport_1400x600-111003.jpg" width="90%"/><br>
-                <br><a href="cercaPalestre.jsp"><button type="button" class="btn btn-info btn-lg"  class="center-block" align="center" >TROVA LA PALESTRA ADATTA</button></a>
-                
+                <br><a href="cercaPalestre.jsp"><button type="button" class="btn btn-info btn-lg" style="margin-top: -150px !important"class="center-block" align="center" >TROVA LA PALESTRA ADATTA</button></a>
+
                 <br><br><br><br><br><br><br><br>                
             </div>                
         </div>

@@ -49,16 +49,34 @@
                 </div>
             </div>
             <div style="height: 1px; background-color:#34889d;"></div>
-        </nav><br><br>
+        </nav>
+        <div class="jumbotron text-center">
+            <h1>Esercizi</h1><br>
+            <p>Trova l'esercizio perfetto alle tue esigenze</p><br><br><br>
+        </div>
         <div class="container"><br><br>
             <div class="well">                
-                <!-- <img src="media/seid.png" width="70%" position="center"/>  -->
-                <!--<img src="media/74df2c9c74281cb2755f7996fa7d0ad0.jpg" width="27%" class="center-block"/>-->
+                <div class="row">
+                    <img src="media/said.png" width="90%" class="col-md-6 imgjeff"/>
+                    <div class="container" >
 
-                
+                        <div class="panel panel-default col-md-6">
+                            <div class="panel-heading">Scegli gruppo muscolare</div>
+                            <div class="panel-body btn-group-vertical">
+                                <br> <button type="button" class="btn-group-vertical" > Petto</button>
+                                <br> <button type="button"class="btn-group-vertical" > Spalle</button>
+                                <br> <button type="button" class="btn-group-vertical" > Bicipiti </button>
+                                <br> <button type="button" class="btn-group-vertical" > Tricipiti </button>
+                                <br> <button type="button"class="btn-group-vertical" > Addominali </button>
+                                <br> <button type="button" class="btn-group-vertical" > Gambe </button>
+                                <br> <button type="button" class="btn-group-vertical" > Schiena </button>
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div><br><br><br>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <footer class="container-fluid text-center">
             <p>Creato e ideato da Andrea Marchesoni 5AIN © </p>
         </footer>

@@ -87,6 +87,7 @@
 
                                     <td><form method="post" action="modifica_campi.jsp"  name="edit" value="nome"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Nome")%></a></form></td>  
 
+
                                     <td><form method="post" action="modifica_campi.jsp" name="edit" value="2"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Cognome")%></a></form></td>
 
                                     <td><form method="post" action="modifica_campi.jsp" name="edit" value="3"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= rs.getString("Username")%></a></form></td>
@@ -126,7 +127,8 @@
                                     String querty = "Select A.\"Obiettivo\", A.\"Id_Allenamento\", A.\"Durata\", S.\"Id_Scheda\", S.\"Frequenza\", S.\"Sedute\"  From \"Allenamento\" A, \"Scheda\" S, \"Prevede\" P  Where A.\"Id_Allenamento\" = P.\"Id_Prevede\" and P.\"Id_Prevede\" = S.\"Id_Scheda\"";
                                     Statement x = con.createStatement();
                                     ResultSet xc = x.executeQuery(querty);
-
+                                    
+                                    
                                     while (xc.next()) {
 
                                 %>
@@ -152,60 +154,7 @@
                         </table>                        
                     </div>
                     <div class="col-md-1"></div>
-                </div>
-                <br><br>
-                <h3>Palestre utente</h3><br>
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">   
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Id</th>
-                                    <th>Nome</th>
-                                    <th>Indirizzo</th>
-                                    <th>Inizio abbonamento</th>
-                                    <th>Fine abbonamento</th>
-                                    <th>Costo</th>                                
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <%/*
-                                    String pale = "Select *  From \"Utente\" U, \"Palestra\" P, \"Cerca\" C Where U.\'" + session.getAttribute("CodiceFiscale") + "\' = C.\"Id_Cerca\" and C.\"Id_Cerca\" = P.\"Id_palestra\"";
-                                    Statement xx = con.createStatement();
-                                    ResultSet xd = x.executeQuery(pale);
-
-                                    while (xd.next()) {*/
-
-                                %>
-                                <tr>  
-
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Id_Palestra")*/%></a></td>
-
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Nome")*/%></a></td>
-
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Indirizzo") */%></a></td>
-
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><% /*=xd.getString("Email")*/%></a></td>
-
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Orario")*/%></a></td>
-
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Voto")*/%></a></td>
-                                    
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Telefono")*/%></a></td> 
-                                    
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%/*= xd.getString("Costo")*/%></a></td>
-                                    
-
-                                </tr>
-                                <%/*
-}
-                                    */%>
-                            </tbody>
-                        </table>                        
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
+                </div>                               
                 <br><br>
                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" class="center-block" align="center" >
                     Elimina Account

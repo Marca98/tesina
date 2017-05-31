@@ -108,6 +108,8 @@
                         {lat: 46.094498, lng: 11.109870},
                         {lat: 46.092993, lng: 11.117968}
                     ]
+                    
+                    
                 </script>
                 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
                 </script>    
@@ -125,7 +127,8 @@
 
                     <div class="row">
                         <div class="col-md-1"></div>
-                        <div class="col-md-10">   
+                        <div class="col-md-10">
+
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
@@ -151,13 +154,14 @@
                                         <td> <%= re.getString("Orario")%> </td>
 
                                         <td> <%= re.getString("Indirizzo")%> </td>
-                                        
+
                                         <td><button type="button" class="btn btn-secondary, glyphicon glyphicon-heart-empty"></button></td>
-                                        <% String sch = "Insert into " ; %>
+                                            
                                     </tr>
                                     <%}%>
                                 </tbody> 
                             </table>
+
                         </div>
                         <div class="col-md-1"></div>
                     </div>

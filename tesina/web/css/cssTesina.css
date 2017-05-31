@@ -257,3 +257,14 @@ well{
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
+
+.imgjeff{
+    transition: 0.5s;
+}
+
+.imgjeff:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-filter: drop-shadow(2px 0px 0 darkorange) drop-shadow(-2px 0px 0 darkorange) drop-shadow(0 2px 0 darkorange) drop-shadow(0 -2px 0 darkorange);
+    filter: drop-shadow(2px 0px 0 darkorange) drop-shadow(-2px 0px 0 darkorange) drop-shadow(0 2px 0 darkorange) drop-shadow(0 -2px 0 darkorange);
+}

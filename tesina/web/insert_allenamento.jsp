@@ -29,5 +29,5 @@
 
     stat.executeUpdate(prevede);
 
-    response.sendRedirect("allenamento.jsp");
+    response.sendRedirect("account.jsp");
 %>
