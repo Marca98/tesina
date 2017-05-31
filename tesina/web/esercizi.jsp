@@ -63,13 +63,7 @@
                         <div class="panel panel-default col-md-6">
                             <div class="panel-heading">Scegli gruppo muscolare</div>
                             <div class="panel-body btn-group-vertical">
-                                <br> <button type="button" class="btn-group-vertical" > Petto</button>
-                                <br> <button type="button"class="btn-group-vertical" > Spalle</button>
-                                <br> <button type="button" class="btn-group-vertical" > Bicipiti </button>
-                                <br> <button type="button" class="btn-group-vertical" > Tricipiti </button>
-                                <br> <button type="button"class="btn-group-vertical" > Addominali </button>
-                                <br> <button type="button" class="btn-group-vertical" > Gambe </button>
-                                <br> <button type="button" class="btn-group-vertical" > Schiena </button>
+                                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
                             </div>
                         </div>
