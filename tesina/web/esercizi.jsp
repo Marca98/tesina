@@ -56,18 +56,30 @@
         </div>
         <div class="container"><br><br>
             <div class="well">                
-                <div class="row">
-                    <img src="media/said.png" width="90%" class="col-md-6 imgjeff"/>
-                    <div class="container" >
+                <div class="row">                    
+                     <img src="media/said.png" width="90%" class="col-md-6 imgjeff" id="jeff"  usemap="#Map" />
+                    <map>                         
+                       
+                        <area  shape="poly" coords="394,267,341,343,396,397,534,411,590,369,549,290" title="chest" href="#chest" />
+                        <area  shape="poly" coords="263,318,333,359,272,432,212,419" title="bicep1" href="#bicep1" />
+                        <area  shape="poly" coords="574,401,636,394,656,501,602,525" title="bicep2" href="#bicep2" />
+                        <area  shape="poly" coords="381,414,544,428,502,567,409,570" title="abs" href="allenamento" />
+                        <area  shape="poly" coords="333,694,448,709,357,955,293,957" title="leg1" href="#leg1" />
+                        <area  shape="poly" coords="459,714,572,672,549,955,478,955" title="leg2" href="#leg2" />
+                        <area  shape="poly" coords="339,371,378,402,355,504,320,398" title="back1" href="#back1"/>
+                        <area  shape="poly" coords="564,407,543,501,537,513,540,420"  title="back2" href="#back2" />
 
-                        <div class="panel panel-default col-md-6">
-                            <div class="panel-heading">Scegli gruppo muscolare</div>
-                            <div class="panel-body btn-group-vertical">
-                                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <div class="container" >
 
+                            <div class="panel panel-default col-md-6">
+                                <div class="panel-heading">Scegli gruppo muscolare</div>
+                                <div class="panel-body btn-group-vertical">
+                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </map>
                 </div>
             </div>
         </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
