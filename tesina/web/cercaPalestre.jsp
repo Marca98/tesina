@@ -75,6 +75,10 @@
                 <div id="map"></div>
                 <script>
 
+                    // Try HTML5 geolocation.
+
+                    var marker;
+
                     function initMap() {
 
                         var map = new google.maps.Map(document.getElementById('map'), {
@@ -82,34 +86,45 @@
                             center: {lat: 45.9914453, lng: 11.262121900000011}
                         });
 
-                        // Create an array of alphabetical characters used to label the markers.
-                        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-                        // Add some markers to the map.
-                        // Note: The code uses the JavaScript Array.prototype.map() method to
-                        // create an array of markers based on a given "locations" array.
-                        // The map() method here has nothing to do with the Google Maps API.
-                        var markers = locations.map(function (location, i) {
-                            return new google.maps.Marker({
-                                position: location,
-                                label: labels[i % labels.length]
-                            });
+                        marker = new google.maps.Marker({
+                            map: map,
+                            draggable: true,
+                            animation: google.maps.Animation.DROP,
+                            position: {lat: 45.996261, lng: 11.25417352}
+                            
                         });
+                        marker.addListener('click', toggleBounce);
 
-                        // Add a marker clusterer to manage the markers.
-                        var markerCluster = new MarkerClusterer(map, markers,
-                                {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(function (position) {
+                                var pos = {
+                                    lat: position.coords.latitude,
+                                    lng: position.coords.longitude
+                                };
+
+                                infoWindow.setPosition(pos);
+                                infoWindow.setContent('Location found.');
+                                infoWindow.open(map);
+                                map.setCenter(pos);
+                            }, function () {
+                                handleLocationError(true, infoWindow, map.getCenter());
+                            });
+                        } else {
+                            // Browser doesn't support Geolocation
+                            handleLocationError(false, infoWindow, map.getCenter());
+                        }
                     }
-                    var locations = [
-                        {lat: 45.995794, lng: 11.254286},
-                        {lat: 45.988698, lng: 11.300640},
-                        {lat: 46.069282, lng: 11.237296},
-                        {lat: 46.069079, lng: 11.235836},
-                        {lat: 46.094498, lng: 11.109870},
-                        {lat: 46.092993, lng: 11.117968}
-                    ]
-                    
-                    
+                   
+
+                    function toggleBounce() {
+                        if (marker.getAnimation() !== null) {
+                            marker.setAnimation(null);
+                        } else {
+                            marker.setAnimation(google.maps.Animation.BOUNCE);
+                        }
+                    }
+
                 </script>
                 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
                 </script>    
@@ -156,7 +171,7 @@
                                         <td> <%= re.getString("Indirizzo")%> </td>
 
                                         <td><button type="button" class="btn btn-secondary, glyphicon glyphicon-heart-empty"></button></td>
-                                            
+
                                     </tr>
                                     <%}%>
                                 </tbody> 

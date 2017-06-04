@@ -37,3 +37,5 @@ function editableTextBlurred() {
 $(document).ready(function() {
     $("td").click(tdClicked);
 });
+
+

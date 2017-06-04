@@ -34,7 +34,7 @@
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="allenamento.jsp">Allenamento</a></li>
                         <li><a href="cercaPalestre.jsp">Cerca palestre</a></li>
-                        <li><a href="esercizi.jsp">Esercizi</a></li>
+                        <li><a href="scheda.jsp">Scheda</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="account.jsp">Logged in <%= session.getAttribute("Utente")%></a></li>
@@ -127,8 +127,7 @@
                                     String querty = "Select A.\"Obiettivo\", A.\"Id_Allenamento\", A.\"Durata\", S.\"Id_Scheda\", S.\"Frequenza\", S.\"Sedute\"  From \"Allenamento\" A, \"Scheda\" S, \"Prevede\" P  Where A.\"Id_Allenamento\" = P.\"Id_Prevede\" and P.\"Id_Prevede\" = S.\"Id_Scheda\"";
                                     Statement x = con.createStatement();
                                     ResultSet xc = x.executeQuery(querty);
-                                    
-                                    
+
                                     while (xc.next()) {
 
                                 %>
@@ -138,7 +137,7 @@
 
                                     <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Id_Allenamento")%></a></td>
 
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Durata")%></a></td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Durata")%> settimane</a></td>
 
                                     <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= xc.getString("Id_Scheda")%></a></td>
 
@@ -154,35 +153,56 @@
                         </table>                        
                     </div>
                     <div class="col-md-1"></div>
-                </div>                               
-                <br><br>
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" class="center-block" align="center" >
-                    Elimina Account
-                </button>
-                <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <br>
-                                <hr>
-                                <br>
-                                <h4 style="text-align: center ">Sei sicuro di voler eliminare il tuo account?</h4>                
-                                <br>
-                            </div>
-                            <div class="modal-footer"  align="right">
+                </div>
+                <h3>Esercizi preferiti</h3><br>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">   
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>N°</th>
+                                    <th>Gruppo Muscolare</th>
+                                    <th>Pausa</th>                                  
+                                    <th>Serie</th>
+                                    <th>Ripetizioni</th>
+                                     
 
-                                <a href="cancella_account.jsp"<button type="button" class="btn btn-primary" >Si</button></a>
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>                        
-                            </div>
-                        </div>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-            </div>
-            <br><br><br>
-        </div>
+                            <br><br>
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" class="center-block" align="center" >
+                                Elimina Account
+                            </button>
+                            <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <br>
+                                            <hr>
+                                            <br>
+                                            <h4 style="text-align: center ">Sei sicuro di voler eliminare il tuo account?</h4>                
+                                            <br>
+                                        </div>
+                                        <div class="modal-footer"  align="right">
 
-        <footer class="container-fluid text-center background-white">
-            <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
-        </footer>
-    </body>
-</html>
+                                            <a href="cancella_account.jsp"<button type="button" class="btn btn-primary" >Si</button></a>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                <footer class="container-fluid text-center background-white">
+                    <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
+                </footer>
+                </body>
+                </html>

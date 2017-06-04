@@ -37,7 +37,7 @@
                         <li><a href="index.jsp">Home</a></li>
                         <li class="active"><a href="allenamento.jsp">Allenamento</a></li>
                         <li><a href="cercaPalestre.jsp">Cerca palestre</a></li>
-                        <li><a href="esercizi.jsp">Esercizi</a></li>
+                        <li><a href="scheda.jsp">Scheda</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <%

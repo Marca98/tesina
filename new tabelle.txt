@@ -1,0 +1,28 @@
+CREATE TABLE "Esercizio"
+(
+    "Id_Esercizio" varchar(30) not null,
+    "Pausa" integer not null,
+    "Gruppo_Muscolare" varchar(20) not null,
+    "Serie" integer,
+    "Ripetizioni" integer,
+    
+    primary key("Id_Esercizio")
+    
+    );
+
+create generator "GEsercizio";
+
+
+CREATE TABLE "Compone"
+(
+    "Id_Compone" integer not null,
+    "Id_Scheda" integer not null,
+    "Id_Esercizio" integer not null,
+ 
+    primary key("Id_Compone"),
+    foreign key("Id_Scheda")references "Scheda"("Id_Scheda"),
+    foreign key("Id_Esercizio")references "Esercizio"("Id_Esercizio")
+    
+    );
+
+create generator "GCompone";

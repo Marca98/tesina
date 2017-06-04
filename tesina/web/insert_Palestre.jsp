@@ -27,6 +27,8 @@
             + "VALUES(\'" + session.getAttribute("CodiceFiscale") + "\')";
 
     stat.executeUpdate(utente);
+    
+    System.out.println(palestre+cerca+utente);
 
-
+    
 %>
