@@ -38,7 +38,7 @@
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="allenamento.jsp">Allenamento</a></li>
                         <li class="active"><a href="cercaPalestre.jsp">Cerca palestre</a></li>
-                        <li><a href="esercizi.jsp">Esercizi</a></li>
+                        <li><a href="scheda.jsp">Scheda</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <%
@@ -78,6 +78,22 @@
                     // Try HTML5 geolocation.
 
                     var marker;
+                    var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                    var locations = [
+
+                        {lat: 45.995794, lng: 11.254286},
+
+                        {lat: 45.988698, lng: 11.300640},
+
+                        {lat: 46.069282, lng: 11.237296},
+
+                        {lat: 46.069079, lng: 11.235836},
+
+                        {lat: 46.094498, lng: 11.109870},
+
+                        {lat: 46.092993, lng: 11.117968}
+
+                    ]
 
                     function initMap() {
 
@@ -90,10 +106,12 @@
                             map: map,
                             draggable: true,
                             animation: google.maps.Animation.DROP,
-                            position: {lat: 45.996261, lng: 11.25417352}
-                            
+                            position: {lat: 45.995794, lng: 11.254286}
+
                         });
                         marker.addListener('click', toggleBounce);
+
+
 
 
                         if (navigator.geolocation) {
@@ -115,7 +133,7 @@
                             handleLocationError(false, infoWindow, map.getCenter());
                         }
                     }
-                   
+
 
                     function toggleBounce() {
                         if (marker.getAnimation() !== null) {
@@ -124,6 +142,7 @@
                             marker.setAnimation(google.maps.Animation.BOUNCE);
                         }
                     }
+
 
                 </script>
                 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
@@ -169,24 +188,27 @@
                                         <td> <%= re.getString("Orario")%> </td>
 
                                         <td> <%= re.getString("Indirizzo")%> </td>
+                                
+                                <td><button type="button" class="btn btn-secondary, glyphicon glyphicon-heart-empty" ></button></td>
 
-                                        <td><button type="button" class="btn btn-secondary, glyphicon glyphicon-heart-empty"></button></td>
-
-                                    </tr>
-                                    <%}%>
+                                </tr>
+                                <%}%>
                                 </tbody> 
                             </table>
 
                         </div>
                         <div class="col-md-1"></div>
                     </div>
+                </form>
+
+
             </div>
-        </form>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
-</div><br><br>
-<footer class="container-fluid text-center">
-    <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
-</footer>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div><br><br>
+    <footer class="container-fluid text-center">
+        <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
+    </footer>
 </body>
 </html>
