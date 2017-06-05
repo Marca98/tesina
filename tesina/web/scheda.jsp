@@ -57,9 +57,7 @@
         <div class="container"><br><br>
             <div class="well">                
                 <div class="row">                    
-                    <img src="media/said.png" width="90%" class="col-md-6 imgjeff" id="jeff"  usemap="#Map" />
-
-
+                    <img src="media/said.png" width="90%" class="col-md-6 imgjeff" id="jeff"/>
                     <div class="container" >
 
                         <div class="panel panel-default col-md-6">
@@ -68,41 +66,47 @@
                                 <div class="btn-group-vertical">                                    
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chest">Pettorali</button>
                                     <!-- Modal -->
-                                    <div class="modal fade" id="chest" role="dialog">
-                                        <div class="modal-dialog modal-lg">
-                                            <div class="modal-content ">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <h4 class="modal-title">PETTORALI</h4>
-                                                    <img src="media/pettorali_int.png" class="col-md-6" width="60%" />
-                                                    <p class="col-md-6">Rientra nella categoria dei grandi muscoli, situato nella parte anteriore alta del petto, origina dallo sterno e finisce sul braccio. Il pettorale, è composto da un unico muscolo il gran pettorale più un piccolo muscolo situato al di sotto chiamato piccolo pettorale 
-                                                        Gli esercizi per i pettorali agiscono, quindi, sull'intero muscolo, variando semmai la regione del muscolo dove agiscono maggiormente. 
-                                                    </p>
-                                                </div>
-                                                <div class="modal-body">                                                                                                                                                            
-                                                    <h4>Scegli esercizio</h4>
-                                                    <div class="row">
-                                                        <br>
-                                                        <div class="col-md-4">panca piana
-                                                        <img src="media/PETTORALI-SPINTE-PANCA-PIANA-BILANCIERE-2-B.png" alt=""/>
-                                                        </div>
-                                                        <br>
-                                                        <div class="col-md-4">manubri
-                                                            <img src="media/PETTORALI-APERTURE-MANUBRI-PANCA-ALTA-B.png" alt=""/>
-                                                        </div>
-                                                        <br>
-                                                        <div class="col-md-4">piegamenti alle parallele
-                                                            <img src="media/PETTORALI-DIPS-PARALLELE-B.png" alt=""/>
-                                                        </div>
+                                    <form method="POST" action="insert_esercizi.jsp">
+                                        <div class="modal fade" id="chest" role="dialog" >
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content ">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h4 class="modal-title">PETTORALI</h4>
+                                                        <img src="media/pettorali_int.png" class="col-md-6" width="60%" />
+                                                        <p class="col-md-6">Rientra nella categoria dei grandi muscoli, situato nella parte anteriore alta del petto, origina dallo sterno e finisce sul braccio. Il pettorale, è composto da un unico muscolo il gran pettorale più un piccolo muscolo situato al di sotto chiamato piccolo pettorale 
+                                                            Gli esercizi per i pettorali agiscono, quindi, sull'intero muscolo, variando semmai la regione del muscolo dove agiscono maggiormente. 
+                                                        </p>
                                                     </div>
-                                                    <hr>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                                                    <div class="modal-body">                                                                                                                                                            
+                                                        <h4>Scegli esercizio</h4>
+                                                        <div class="row">
+
+                                                            <div class="col-md-4"><h5>panca piana</h5>
+                                                                <img src="media/PETTORALI-SPINTE-PANCA-PIANA-BILANCIERE-2-B.png" alt=""/>
+                                                                <button type="submit" class="btn btn btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="Id_Esercizio"></button>
+                                                            </div>
+
+                                                            <div class="col-md-4"><h5>manubri</h5>
+                                                                <img src="media/PETTORALI-APERTURE-MANUBRI-PANCA-ALTA-B.png" alt=""/>
+                                                                <button type="submit" class="btn btn- btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="Id_Esercizio"></button>
+                                                            </div>
+
+                                                            <div class="col-md-4"><h5>piegamenti alle parallele</h5>
+                                                                <img src="media/PETTORALI-DIPS-PARALLELE-B.png" alt=""/>
+                                                                <button type="submit" class="btn btn btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="Id_Esercizio"></button>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </form>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bicep">Bicipiti</button>
                                     <div class="modal fade" id="bicep" role="dialog">
                                         <div class="modal-dialog modal-lg">
@@ -110,9 +114,27 @@
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                     <h4 class="modal-title">BICIPITI</h4>
+                                                    <img src="media/lib_78.png" class="col-md-6" width="60%"/>
+                                                    <p class="col-md-6">Muscolo anteriore del braccio, diviso in capo lungo e capo corto, sono composti frontalmente dal muscolo bicipite e lateralmente dal branchiale che ne completa il volume. 
+                                                        Gli esercizi per i bicipiti sono sia esercizi multi-articolari dedicati allo sviluppo della forza e del volume generale come curl bilanciere in piedi o il curl alternato manubri in piedi che esercizi di isolamento per sviluppare i dettagli. </p>
                                                 </div>
                                                 <div class="modal-body">
                                                     <p>scegli esercizio</p>
+                                                    <div class="row">
+
+                                                        <div class="col-md-4"><h5>martello</h5>                                                           
+                                                            <img src="media/hammer-curl-cavi-corda-b.png" alt=""/>
+                                                        </div>
+
+                                                        <div class="col-md-4"><h5>curl in piedi</h5>
+                                                            <img src="media/bicipiti-curl-bilancieri-piedi-b.png" alt=""/>
+                                                        </div>
+
+                                                        <div class="col-md-4"><h5>manubri alternati</h5>
+                                                            <img src="media/bicipiti-curl-manubri-alternato-piedi-b.png" alt=""/>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
