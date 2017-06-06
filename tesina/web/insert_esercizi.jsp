@@ -8,6 +8,7 @@
             + "VALUES(\'" + request.getParameter("Id_Preferito") + "\', "
             + session.getAttribute("CodiceFiscale") + "\', "
             + request.getParameter("Id_Esercizio") + "\', ";
+        
     
      stat.executeUpdate(pref);
      
