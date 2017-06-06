@@ -5,3 +5,12 @@ begin
     new."Id_Allenamento" = Gen_id("GAllenamento",1);
     end^
 set term ;^
+
+set term ^;
+create trigger "TRGPreferito" for "Preferito"
+active before insert as 
+begin
+    new."Id_Preferito" = Gen_id("GPreferito",1);
+    end^
+set term ;^
+
