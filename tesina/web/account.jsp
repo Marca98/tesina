@@ -166,43 +166,48 @@
                                     <th>Pausa</th>                                  
                                     <th>Serie</th>
                                     <th>Ripetizioni</th>
-                                     
+
 
                                 </tr>
                             </thead>
                             <tbody>
+                                <%
+                                    String pref = "Select * From \"Preferito\"";
+                                    Statement pr = con.createStatement();
+                                    ResultSet p = a.executeQuery(pref);
+                                %>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                            <br><br>
-                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" class="center-block" align="center" >
-                                Elimina Account
-                            </button>
-                            <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-body">
-                                            <br>
-                                            <hr>
-                                            <br>
-                                            <h4 style="text-align: center ">Sei sicuro di voler eliminare il tuo account?</h4>                
-                                            <br>
-                                        </div>
-                                        <div class="modal-footer"  align="right">
-
-                                            <a href="cancella_account.jsp"<button type="button" class="btn btn-primary" >Si</button></a>
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>                        
-                                        </div>
-                                    </div>
-                                </div>
+                <br><br>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" class="center-block" align="center" >
+                    Elimina Account
+                </button>
+                <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <br>
+                                <hr>
+                                <br>
+                                <h4 style="text-align: center ">Sei sicuro di voler eliminare il tuo account?</h4>                
+                                <br>
                             </div>
-                    </div>
-                    <br><br><br>
-                </div>
+                            <div class="modal-footer"  align="right">
 
-                <footer class="container-fluid text-center background-white">
-                    <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
-                </footer>
-                </body>
-                </html>
+                                <a href="cancella_account.jsp"<button type="button" class="btn btn-primary" >Si</button></a>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+
+        <footer class="container-fluid text-center background-white">
+            <p>Creato e ideato da Andrea Marchesoni 5AIN ©</p>
+        </footer>
+    </body>
+</html>

@@ -1,19 +1,15 @@
 <%@ include file="include/connessione.jsp" %>
 
-<%    
-     if (session.getAttribute("CodiceFiscale") == null) {
+<%    if (session.getAttribute("CodiceFiscale") == null) {
         response.sendRedirect("login.jsp");
-    }   
-        String pref = "INSERT INTO \"Preferito\"(\"Id_Preferito\",\"Id_Utente\", \"Id_Esercizio\")"
-            + "VALUES(\'" + request.getParameter("Id_Preferito") + "\', "
-            + session.getAttribute("CodiceFiscale") + "\', "
-            + request.getParameter("Id_Esercizio") + "\', ";
-        
-    
-     stat.executeUpdate(pref);
-     
-     
-    
-                   
+
+    }
+
+    String pref = "INSERT INTO \"Preferito\"(\"Id_Utente\", \"Id_Esercizio\")"
+            + "VALUES(\'" + session.getAttribute("CodiceFiscale") + "\', \' "
+            + request.getParameter("Id_Esercizio") + "\')";
+
+    stat.executeUpdate(pref);
+
 
 %>

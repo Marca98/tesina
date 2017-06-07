@@ -3,8 +3,8 @@
 
 <%
     final String DRIVER = "org.firebirdsql.jdbc.FBDriver"; //Nome del driver
-    //final String DB_NAME = "jdbc:firebirdsql://localhost:3050/C:/Lavoro/tesina3.fdb"; //Nome del database completo di percorso
-    final String DB_NAME = "jdbc:firebirdsql://localhost:3050/C:/users/andrea/desktop/tesina_gym/tesina/tesina2.fdb"; // casa
+    final String DB_NAME = "jdbc:firebirdsql://localhost:3050/C:/Lavoro/tesina3.fdb"; //Nome del database completo di percorso
+    //final String DB_NAME = "jdbc:firebirdsql://localhost:3050/C:/users/andrea/desktop/tesina_gym/tesina/tesina2.fdb"; // casa
     final String DB_USER = "SYSDBA"; // Nome utente
     final String DB_PASSWORD = "masterkey"; //Password
 
