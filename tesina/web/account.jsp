@@ -172,7 +172,7 @@
                             </thead>
                             <tbody>
                                 <%
-                                    String pref = "Select * From \"Preferito\"";
+                                    String pref = "Select * From \"Preferito\" P ,\"Esercizio\" E where P.\"Id_Preferito\" = E.\"Id_Esercizio\"";
                                     Statement pr = con.createStatement();
                                     ResultSet p = a.executeQuery(pref);
 
