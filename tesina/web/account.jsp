@@ -181,6 +181,36 @@
                     </div>
                 </div>
                 <br><br>
+                <h3>Palestre votate</h3><br>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">   
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Voto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <%
+                                    String heart = "Select \"Voto\" from \"Palestra\"";
+                                    Statement d = con.createStatement();
+                                    ResultSet dc = x.executeQuery(heart);
+
+                                    while (dc.next()) {
+
+                                %>
+                                <tr>  
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= dc.getString("Voto")%></a></td>                                                                     
+                                </tr>
+                                <%
+
+                                    }%>
+                            </tbody>
+                        </table>                        
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" class="center-block" align="center" >
                     Elimina Account
                 </button>

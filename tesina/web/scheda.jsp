@@ -91,7 +91,7 @@
                                                             <form method="post" action="insert_esercizi.jsp">
                                                                 <div class="col-md-4"><h5>panca piana</h5>
                                                                     <img src="media/PETTORALI-SPINTE-PANCA-PIANA-BILANCIERE-2-B.png"/>                                                                
-                                                                    <button type="submit" class="btn btn btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="panca piana"></button>
+                                                                    <button type="submit" class="btn btn btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="1"></button>
                                                                 </div>
 
                                                                 <div class="col-md-4"><h5>manubri</h5>
