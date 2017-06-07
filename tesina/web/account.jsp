@@ -175,7 +175,16 @@
                                     String pref = "Select * From \"Preferito\"";
                                     Statement pr = con.createStatement();
                                     ResultSet p = a.executeQuery(pref);
+
+                                    while (p.next()) {
                                 %>
+
+                            <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= p.getString("Nome_Preferito")%></a></td>
+
+                            <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= p.getString("Id_esercizio")%></a></td> 
+
+
+                            <%}%>
                             </tbody>
                         </table>
                     </div>

@@ -86,9 +86,9 @@
 
                                                     <div class="modal-body">                                                                                                                                                            
                                                         <h4>Scegli esercizio</h4>
+                                                        <form method="post" action="insert_esercizi.jsp">
+                                                            <div class="row">
 
-                                                        <div class="row">
-                                                            <form method="post" action="insert_esercizi.jsp">
                                                                 <div class="col-md-4"><h5>panca piana</h5>
                                                                     <img src="media/PETTORALI-SPINTE-PANCA-PIANA-BILANCIERE-2-B.png"/>                                                                
                                                                     <button type="submit" class="btn btn btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="1"></button>
@@ -96,15 +96,15 @@
 
                                                                 <div class="col-md-4"><h5>manubri</h5>
                                                                     <img src="media/PETTORALI-APERTURE-MANUBRI-PANCA-ALTA-B.png" />
-                                                                    <button type="submit" class="btn btn- btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="manubri"></button>
+                                                                    <button type="submit" class="btn btn- btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="2"></button>
                                                                 </div>
 
                                                                 <div class="col-md-4"><h5>piegamenti alle parallele</h5>
                                                                     <img src="media/PETTORALI-DIPS-PARALLELE-B.png" />
-                                                                    <button type="submit" class="btn btn btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="piegamenti alle parallelle"></button>
-                                                                </div>
-                                                            </form>
-                                                        </div>
+                                                                    <button type="submit" class="btn btn btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="3"></button>
+                                                                </div>                                                            
+                                                            </div>
+                                                        </form>
                                                         <hr>
                                                     </div>
                                                     <div class="modal-footer">
@@ -130,15 +130,15 @@
                                                         <div class="row">
 
                                                             <div class="col-md-4"><h5>martello</h5>                                                           
-                                                                <img src="media/hammer-curl-cavi-corda-b.png" name="Id_Esercizio" value="martello"/>
+                                                                <img src="media/hammer-curl-cavi-corda-b.png" name="Id_Esercizio" value="4"/>
                                                             </div>
 
                                                             <div class="col-md-4"><h5>curl in piedi</h5>
-                                                                <img src="media/bicipiti-curl-bilancieri-piedi-b.png" name="Id_Esercizio" value="curl in piedi"/>
+                                                                <img src="media/bicipiti-curl-bilancieri-piedi-b.png" name="Id_Esercizio" value="5"/>
                                                             </div>
 
                                                             <div class="col-md-4"><h5>manubri alternati</h5>
-                                                                <img src="media/bicipiti-curl-manubri-alternato-piedi-b.png" name="Id_Esercizio" value="manubri alternati"/>
+                                                                <img src="media/bicipiti-curl-manubri-alternato-piedi-b.png" name="Id_Esercizio" value="6"/>
                                                             </div>
                                                         </div>
 
@@ -164,13 +164,13 @@
                                                         <h4>Scegli esercizio</h4>
                                                         <div class="row">
                                                             <div class="col-md-4"><h5>Manubrio a 90°</h5>
-                                                                <img src="media/manubrio90.png" name="Id_Esercizio" value="manubrio a 90°"/>
+                                                                <img src="media/manubrio90.png" name="Id_Esercizio" value="7"/>
                                                             </div>
                                                             <div class="col-md-4"><h5>Pushdowns</h5>
-                                                                <img src="media/pushdowns.png" name="Id_Esercizio" value="pushdowns"/>
+                                                                <img src="media/pushdowns.png" name="Id_Esercizio" value="8"/>
                                                             </div>
                                                             <div class="col-md-4"><h5>French press</h5>
-                                                                <img src="media/french.png" name="Id_Esercizio" value="french press"/>
+                                                                <img src="media/french.png" name="Id_Esercizio" value="9"/>
                                                             </div>
                                                         </div>
                                                     </div>
