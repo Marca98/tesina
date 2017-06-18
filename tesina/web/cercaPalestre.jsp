@@ -189,7 +189,7 @@
 
                                         <td> <%= re.getString("Indirizzo")%> </td>
                                 
-                                <td><button type="submit" class="btn btn-secondary, glyphicon glyphicon-heart-empty" name="Voto" value="*"></button></td>
+                                <td><button type="submit" class="btn btn-secondary, glyphicon glyphicon-heart-empty" name="sub" value="Id_Cerca"></button></td>
 
                                 </tr>
                                 <%}%>

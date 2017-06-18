@@ -169,8 +169,9 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <tr>
                                 <%
-                                    String pref = "Select e.\"Id_Esercizio\", P.\"Id_Preferito\", E.\"Nome\", E.\"Gruppo_Muscolare\", E.\"Pausa\" From \"Preferito\" P , \"Esercizio\" E where P.\"Id_Esercizio\" = E.\"Id_Esercizio\" and P.\"Id_Utente\" = '" + session.getAttribute("CodiceFiscale") + "'";
+                                    String pref = "Select distinct e.\"Id_Esercizio\", P.\"Id_Preferito\", E.\"Nome\", E.\"Gruppo_Muscolare\", E.\"Pausa\" From \"Preferito\" P , \"Esercizio\" E where P.\"Id_Esercizio\" = E.\"Id_Esercizio\" and P.\"Id_Utente\" = '" + session.getAttribute("CodiceFiscale") + "'";
                                     Statement pr = con.createStatement();
                                     ResultSet p = a.executeQuery(pref);
 
@@ -185,26 +186,27 @@
                             
                             <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= p.getString("Gruppo_Muscolare")%></a></td> 
 
-
+                                <tr>
                             <%}%>
+                            
                             </tbody>
                         </table>
                     </div>
                 </div>
                 <br><br>
-                <h3>Palestre votate</h3><br>
+                <h3>Palestre Utente</h3><br>
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">   
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>Voto</th>
+                                    <th>Nome</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <%
-                                    String heart = "Select \"Voto\" from \"Palestra\"";
+                                    String heart = "Select P.\"Voto\" from \"Palestra\" P, \"Cerca\" C where P.\"Id_Palestra\" = C.\"Id_Cerca\" and C.\"Id_Utente\" = '" + session.getAttribute("CodiceFiscale") + "'";
                                     Statement d = con.createStatement();
                                     ResultSet dc = x.executeQuery(heart);
 
@@ -212,7 +214,7 @@
 
                                 %>
                                 <tr>  
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= dc.getString("Voto")%></a></td>                                                                     
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= dc.getString("Nome")%></a></td>                                                                     
                                 </tr>
                                 <%
 
