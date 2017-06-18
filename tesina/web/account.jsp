@@ -124,7 +124,7 @@
                             </thead>
                             <tbody>
                                 <%
-                                    String querty = "Select A.\"Obiettivo\", A.\"Id_Allenamento\", A.\"Durata\", S.\"Id_Scheda\", S.\"Frequenza\", S.\"Sedute\"  From \"Allenamento\" A, \"Scheda\" S, \"Prevede\" P  Where A.\"Id_Allenamento\" = P.\"Id_Prevede\" and P.\"Id_Prevede\" = S.\"Id_Scheda\"";
+                                    String querty = "Select A.\"Obiettivo\", A.\"Id_Allenamento\", A.\"Durata\", S.\"Id_Scheda\", S.\"Frequenza\", S.\"Sedute\"  From \"Allenamento\" A, \"Scheda\" S, \"Prevede\" P  Where A.\"Id_Allenamento\" = P.\"Id_Allenamento\" and P.\"Id_Scheda\" = S.\"Id_Scheda\" and A.\"Id_Utente\" = '" + session.getAttribute("CodiceFiscale") + "'";
                                     Statement x = con.createStatement();
                                     ResultSet xc = x.executeQuery(querty);
 
