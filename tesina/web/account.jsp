@@ -162,26 +162,28 @@
                             <thead>
                                 <tr>
                                     <th>N°</th>
+                                    <th>N° preferito</th>
+                                    <th>Nome</th>
                                     <th>Gruppo Muscolare</th>
                                     <th>Pausa</th>                                  
-                                    <th>Serie</th>
-                                    <th>Ripetizioni</th>
-
-
                                 </tr>
                             </thead>
                             <tbody>
                                 <%
-                                    String pref = "Select * From \"Preferito\" P ,\"Esercizio\" E where P.\"Id_Preferito\" = E.\"Id_Esercizio\"";
+                                    String pref = "Select e.\"Id_Esercizio\", P.\"Id_Preferito\", E.\"Nome\", E.\"Gruppo_Muscolare\", E.\"Pausa\" From \"Preferito\" P , \"Esercizio\" E where P.\"Id_Esercizio\" = E.\"Id_Esercizio\" and P.\"Id_Utente\" = '" + session.getAttribute("CodiceFiscale") + "'";
                                     Statement pr = con.createStatement();
                                     ResultSet p = a.executeQuery(pref);
 
                                     while (p.next()) {
                                 %>
 
-                            <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= p.getString("Nome_Preferito")%></a></td>
-
-                            <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= p.getString("Id_esercizio")%></a></td> 
+                            <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= p.getString("Id_Esercizio")%></a></td>
+                            
+                            <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= p.getString("Id_Preferito")%></a></td>  
+                            
+                            <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= p.getString("Nome")%></a></td>
+                            
+                            <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= p.getString("Gruppo_Muscolare")%></a></td> 
 
 
                             <%}%>
