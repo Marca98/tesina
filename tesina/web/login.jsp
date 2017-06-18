@@ -33,7 +33,7 @@
 
             } else {
 
-                response.sendRedirect("login.jsp");
+                response.sendRedirect("login_error.jsp");
             }
         } catch (SQLException e) {
             session.setAttribute("errore", "Login fallito");
