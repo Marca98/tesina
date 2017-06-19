@@ -1,7 +1,7 @@
 body{
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background: grey;
+    background: white;
     background: #466368;
     background: -webkit-linear-gradient(#648880, #293f50);
     background:    -moz-linear-gradient(#648880, #293f50);
@@ -267,4 +267,11 @@ well{
     transition: 0.2s;
     -webkit-filter: drop-shadow(2px 0px 0 darkorange) drop-shadow(-2px 0px 0 darkorange) drop-shadow(0 2px 0 darkorange) drop-shadow(0 -2px 0 darkorange);
     filter: drop-shadow(2px 0px 0 darkorange) drop-shadow(-2px 0px 0 darkorange) drop-shadow(0 2px 0 darkorange) drop-shadow(0 -2px 0 darkorange);
+}
+
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
 }

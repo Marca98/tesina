@@ -6,7 +6,7 @@
     }
 
     String cerca = "INSERT INTO \"Cerca\" (\"Id_Utente\", \"Id_Palestra\")"
-            + "VALUES(\'" + session.getAttribute("CodiceFiscale") + "\', "
+            + "VALUES(\'" + session.getAttribute("CodiceFiscale") + "\', \'"
             + request.getParameter("Id_Palestra") + "\')";
 
     stat.executeUpdate(cerca);
