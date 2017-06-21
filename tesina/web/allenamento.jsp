@@ -68,15 +68,16 @@
                     </div>
                     <div class="col-md-6 col-sm-6 ">
                         <h2>MUSCOLI E FORZA</h2><br>
-                        <h3>Per sviluppare più massa muscolare è ideale fare allenementi di forza e seguire la dieta giusta. È inoltre necessario riposare sufficientemente perché i muscoli non saranno in grado di crescere senza aver prima recuperato.</h3><br>
-                        <br>
-                         <img src="media/massa.bmp"  width="80%"alt=""/>
-                         <br>                        
+                        <h3>Per sviluppare più massa muscolare è ideale fare allenementi di forza e seguire la dieta giusta. È inoltre necessario riposare sufficientemente perché i muscoli non saranno in grado di crescere senza aver prima recuperato.</h3><br>                                               
                         <br>Ideale per:<br>
 
-                        <br>Chiunque stia cercando di sviluppare in maniera rapida ma costante i propri livelli di forza e la propria massa muscolare
-                        Bodybuilder ed atleti che desiderano migliorare la propria forma fisica e le proprie prestazioni.
+                        <br><p>Chiunque stia cercando di sviluppare in maniera rapida ma costante i propri livelli di forza e la propria massa muscolare
+                            Bodybuilder ed atleti che desiderano migliorare la propria forma fisica e le proprie prestazioni.</p>
                         <br>
+                        <br>
+                         <img src="media/massa.bmp"  width="80%"alt=""/>
+                         <br> 
+                 
                         <br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#muscoli">Scegli piano</button>
                         <!-- Modal -->
 
@@ -246,7 +247,7 @@
                         <h2>DIETA E PERDITA DI PESO</h2><br>
                         <h3>Ridurre il grasso corporeo, perdere peso o semplicemente dimagrire sono alcuni degli obiettivi più comuni, sia per gli uomini che per le donne</h3><br>
 
-                        L'approccio migliore per perdere massa grassa è sempre quello di apportare cambiamenti nello stile di vita, inserendo nella routine quotidiana esercizi e un'alimentazione equilibrata e ben strutturata. L'uso di integratori può essere una carta vincente che, se giocata al momento giusto, rende più semplice l'intero processo.<br>
+                        <p>L'approccio migliore per perdere massa grassa è sempre quello di apportare cambiamenti nello stile di vita, inserendo nella routine quotidiana esercizi e un'alimentazione equilibrata e ben strutturata. L'uso di integratori può essere una carta vincente che, se giocata al momento giusto, rende più semplice l'intero processo.</p><br>
                         <br>
                          <img src="media/peso.bmp"  width="80%"alt=""/>
                          <br>
@@ -323,8 +324,8 @@
                         <h2>
                             MASSA MAGRA</h2><br>
                         <h3>Per ottenere un corpo asciutto sono necessarie disciplina e dedizione</h3><br>
-                        La sfida maggiore è trovare il giusto equilibrio e consumare una quantità di calorie a sostenere la crescita muscolare senza accumulare grasso superfluo. Bisogna seguire un'alimentazione che porti a un consumo sufficiente di proteine per favorire la crescita muscolare, mentre i carboidrati sono fondamentali per fornire energia al corpo e assicurare un allenamento intenso. Per mantenere questo delicato equilibrio. La soluzione ideale è quella di abbinare una dieta rigorosa a intervalli di allenamento intenso.
-                        Suggerimenti Prodotti<br>
+                        <p>La sfida maggiore è trovare il giusto equilibrio e consumare una quantità di calorie a sostenere la crescita muscolare senza accumulare grasso superfluo. Bisogna seguire un'alimentazione che porti a un consumo sufficiente di proteine per favorire la crescita muscolare, mentre i carboidrati sono fondamentali per fornire energia al corpo e assicurare un allenamento intenso. Per mantenere questo delicato equilibrio. La soluzione ideale è quella di abbinare una dieta rigorosa a intervalli di allenamento intenso.
+                            Suggerimenti Prodotti</p><br>
                         <br>
                         <img src="media/shred.bmp" width='80%'/>
                         <br>

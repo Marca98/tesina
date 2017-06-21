@@ -117,24 +117,37 @@
 
         <div class=" container" ><br> 
             <div class="well text-center"> 
-                <h1 class="display-1">Gym Mate</h1><br><br> 
-                <!--<h2>Piani nutrizionali, schede, consigli del giorno e valutazione del tuo allenamento : Gym Mate ti aiuterà a raggiungere i tuoi obiettivi rapidamente e vivere una vita più sana</h2>-->                
-                <br><h3>Raggiungi i tuoi obiettivi</h3><br>
+                <h1 class="display-1">Gym Mate</h1><br>              
+                <h4>Raggiungi i tuoi obiettivi</h4><br>
 
                 <div class="post">
                     <img src="media/attempt_2-052205.jpg" width="90%"/><br>                 
                     <br><a href="login.jsp"><button type="button" class="btn btn-info btn-lg" style="margin-top: -150px !important" class="center-block" align="center" >JOIN THE CREW</button></a>                 
                 </div>
 
+                <hr>
+                <br>
                 <div class="row" >
-                    <div class="post col-md-6 col-sm-6 " >
+                    <div class="post col-md-6 col-md-6 " >
                         <img src="media/gear-patrol-stop-doing-this-at-gym-lead-full.jpg" width="80%"/>
                         <br><a href="allenamento.jsp"><button type="button" class="btn btn-info btn-lg"  class="center-block" style="margin-top: -100px !important" align="center" >CREA L'ALLENAMENTO</button></a>
                     </div>
 
-
-
+                    
+                    <h1 class="text-justify">Crea il tuo allenamento</h1><br>
+                    <p class="text-justify">Parti dalla base per raggiungere i tuoi obiettivi</p><br>
+                        <ul class="text-justify">
+                            <li><h3>Intuitivo</h3></li>
+                            <li><h3>Immediato</h3>
+                                <ul class="list-unstyled">
+                                    <li><h3>Facile da creare</h3></li>                                    
+                                </ul>
+                            </li>
+                            <li><h3>Spiegazione accurata</h3></li>
+                        </ul>                    
                 </div>
+                <hr>
+                <br>
                 <br>
                 <div class="post">
                     <img src="media/your_sport_1400x600-111003.jpg" width="90%"/><br>
