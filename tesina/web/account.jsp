@@ -206,7 +206,7 @@
                             </thead>
                             <tbody>
                                 <%
-                                    String heart = "Select P.\"Voto\" from \"Palestra\" P, \"Cerca\" C where P.\"Id_Palestra\" = C.\"Id_Cerca\" and C.\"Id_Utente\" = '" + session.getAttribute("CodiceFiscale") + "'";
+                                    String heart = "Select P.\"Nome\" from \"Cerca\" C, \"Palestra\" P where C.\"Id_Utente\" = '" + session.getAttribute("CodiceFiscale") + "' AND C.\"Id_Palestra\" = P.\"Id_Palestra\"";
                                     Statement d = con.createStatement();
                                     ResultSet dc = x.executeQuery(heart);
 
