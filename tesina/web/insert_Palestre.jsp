@@ -5,13 +5,13 @@
         response.sendRedirect("login.jsp");
     }
 
-    
-    String palestre = "INSERT INTO \"Palestra\" (\"Voto\")"
-            + "VALUES(\'"+ request.getParameter("Voto") + "\')";
+    String cerca = "INSERT INTO \"Cerca\" (\"Id_Utente\", \"Id_Palestra\") " 
+            + "VALUES(\'" + session.getAttribute("CodiceFiscale") + "\', \'"
+            + request.getParameter("Id_Cerca") + "\')";
 
-    stat.executeUpdate(palestre);
+    stat.executeUpdate(cerca);
 
-
+    response.sendRedirect("account.jsp");
 
     
 %>

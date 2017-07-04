@@ -15,27 +15,11 @@ function myFunction() {
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
-function td() {
-    var tdHtml = $(this).html();
-    var editableText = $("<textarea />");
-    editableText.val(tdHtml);
-    $(this).replaceWith(editableText);
-    editableText.focus();
-    // setup the blur event for this new textarea
-    editableText.blur(editableTextBlurred);
-}
 
-function editableTextBlurred() {
-    var html = $(this).val();
-    var viewableText = $("<td>");
-    viewableText.html(html);
-    $(this).replaceWith(viewableText);
-    // setup the click event for this new td
-    viewableText.click(tdClicked);
-}
 
-$(document).ready(function() {
-    $("td").click(tdClicked);
+jQuery(document).ready(function() {
+    jQuery('.post').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn',
+        offset: 100
+       });
 });
-
-

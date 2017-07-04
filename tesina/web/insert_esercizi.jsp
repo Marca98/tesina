@@ -6,11 +6,11 @@
     }
 
 
-    String pref = "INSERT INTO \"Preferito\"(\"Id_Utente\", \"Id_Esercizio\")"
+    String prefe = "INSERT INTO \"Preferito\"(\"Id_Utente\", \"Id_Esercizio\")"
             + "VALUES(\'" + session.getAttribute("CodiceFiscale") + "\', \' "
             + request.getParameter("Id_Esercizio") + "\')";
 
-    stat.executeUpdate(pref);
+    stat.executeUpdate(prefe);
     response.sendRedirect("account.jsp");
 
 

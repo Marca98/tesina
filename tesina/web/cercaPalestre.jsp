@@ -151,14 +151,15 @@
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg1wXIFzFKqNoyFFqdQ7vZwMZAT201ioc&callback=initMap">
                 </script>
                 <br><br><br>
-                <form method="get" >
+                <form method="get">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search" name="search">
                         <div class="input-group-btn">
                             <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                         </div>
                     </div>
-
+                </form>
+                <form metthod="get" action="insert_Palestre.jsp">
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-10">
@@ -189,7 +190,7 @@
 
                                         <td> <%= re.getString("Indirizzo")%> </td>
                                 
-                                <td><button type="submit" class="btn btn-secondary, glyphicon glyphicon-heart-empty" name="Voto" value="*"></button></td>
+                                        <td><button type="submit" class="btn btn-secondary, glyphicon glyphicon-heart-empty" name="Id_Cerca" value="<%=re.getString("Id_Palestra")%>"></button></td>
 
                                 </tr>
                                 <%}%>
