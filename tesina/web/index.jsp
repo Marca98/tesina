@@ -22,6 +22,15 @@
         <script src="viewportchecker.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!-- We also need jQuery -->
 
+        
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/css2.css" rel="stylesheet" type="text/css"/>
+        <link href="css/cssra.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery2.min.js" type="text/javascript"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        
         <style> 
 
             /* Add a gray background color and some padding to the footer */ 

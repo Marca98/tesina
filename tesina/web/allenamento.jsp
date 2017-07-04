@@ -18,6 +18,16 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/cssTesina.css">
         <link href="js/jsGym.js">
+        
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/css2.css" rel="stylesheet" type="text/css"/>
+        <link href="css/cssra.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery2.min.js" type="text/javascript"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        
+        
     </head>
     <link rel="icon" href="media/muscle.png">
     <body>
@@ -73,8 +83,7 @@
 
                         <br><p>Chiunque stia cercando di sviluppare in maniera rapida ma costante i propri livelli di forza e la propria massa muscolare
                             Bodybuilder ed atleti che desiderano migliorare la propria forma fisica e le proprie prestazioni.</p>
-                        <br>
-                        <br>
+
                          <img src="media/massa.bmp"  width="80%"alt=""/>
                          <br> 
                  

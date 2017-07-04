@@ -17,6 +17,16 @@
         <link rel="stylesheet" href="css/cssTesina.css">
         <link href="js/jsGym.js">
         <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+        
+        
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/css2.css" rel="stylesheet" type="text/css"/>
+        <link href="css/cssra.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery2.min.js" type="text/javascript"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        
     </head>
 
     <link rel="icon" href="muscle.png">
@@ -127,21 +137,25 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <h4>scegli esercizio</h4>
+                                                        <form method="post" action="insert_esercizi.jsp">
                                                         <div class="row">
 
                                                             <div class="col-md-4"><h5>martello</h5>                                                           
-                                                                <img src="media/hammer-curl-cavi-corda-b.png" name="Id_Esercizio" value="4"/>
+                                                                <img src="media/hammer-curl-cavi-corda-b.png" />
+                                                                <button type="submit" class="btn btn- btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="4"></button>
                                                             </div>
 
                                                             <div class="col-md-4"><h5>curl in piedi</h5>
-                                                                <img src="media/bicipiti-curl-bilancieri-piedi-b.png" name="Id_Esercizio" value="5"/>
+                                                                <img src="media/bicipiti-curl-bilancieri-piedi-b.png" />
+                                                                <button type="submit" class="btn btn- btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="5"></button>
                                                             </div>
 
                                                             <div class="col-md-4"><h5>manubri alternati</h5>
-                                                                <img src="media/bicipiti-curl-manubri-alternato-piedi-b.png" name="Id_Esercizio" value="6"/>
+                                                                <img src="media/bicipiti-curl-manubri-alternato-piedi-b.png" />
+                                                                <button type="submit" class="btn btn- btn-md glyphicon glyphicon-star-empty" name="Id_Esercizio" value="6"></button>
                                                             </div>
                                                         </div>
-
+                                                        </form>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

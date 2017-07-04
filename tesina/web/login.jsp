@@ -2,6 +2,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
+<link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/css2.css" rel="stylesheet" type="text/css"/>
+        <link href="css/cssra.css" rel="stylesheet" type="text/css"/>
+
+
 <%  String Username = null;
     String Password = null;
 

@@ -15,7 +15,17 @@
         <link rel="stylesheet" href="css/cssTesina2.css">
         <script src="jquery-3.1.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>     
+        <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>   
+        
+        
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/css2.css" rel="stylesheet" type="text/css"/>
+        <link href="css/cssra.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery2.min.js" type="text/javascript"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+                
     </head>
     <link rel="icon" href="muscle.png">
     <body>
