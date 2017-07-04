@@ -202,11 +202,14 @@
                             <thead>
                                 <tr>
                                     <th>Nome</th>
+                                    <th>Indirizzo</th>
+                                    <th>Orari</th>
+                                    <th>Costo</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <%
-                                    String heart = "Select P.\"Nome\" from \"Cerca\" C, \"Palestra\" P where C.\"Id_Utente\" = '" + session.getAttribute("CodiceFiscale") + "' AND C.\"Id_Palestra\" = P.\"Id_Palestra\"";
+                                    String heart = "Select P.\"Nome\", P.\"Indirizzo\", P.\"Orario\", P.\"COSTO\" from \"Cerca\" C, \"Palestra\" P where C.\"Id_Utente\" = '" + session.getAttribute("CodiceFiscale") + "' AND C.\"Id_Palestra\" = P.\"Id_Palestra\"";
                                     Statement d = con.createStatement();
                                     ResultSet dc = x.executeQuery(heart);
 
@@ -214,7 +217,10 @@
 
                                 %>
                                 <tr>  
-                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= dc.getString("Nome")%></a></td>                                                                     
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= dc.getString("Nome")%></a></td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= dc.getString("Indirizzo")%></a></td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= dc.getString("Orario")%></a></td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modify!"><%= dc.getString("COSTO")%> €</a></td> 
                                 </tr>
                                 <%
 
